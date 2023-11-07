@@ -2,8 +2,10 @@
 
 - [projekt-be](#projekt-be)
   - [Zespół](#zespół)
+## How to run:  
+docker-compose up  
  
-## Info
+## Info  
 database:  
 http://localhost:8081/  
 Baza: mysql  
