@@ -5,9 +5,9 @@
  
 ## Info
 
-Baza: mysql
-user: root
-pass: prestashop
+Baza: mysql  
+user: root  
+pass: prestashop  
 
 ## Zespół
 
