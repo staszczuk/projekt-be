@@ -5,7 +5,7 @@
  
 ## Info
 database:  
-http://localhost:8081/
+http://localhost:8081/  
 Baza: mysql  
 user: root  
 pass: prestashop  
