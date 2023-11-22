@@ -1,5 +1,11 @@
 # projekt-be
 
+#TODO:   
+think what about the images like banners and products,   
+cause they are not stored in git (.gitignore)   
+nor database (of course)
+
+
 - [projekt-be](#projekt-be)
   - [Zespół](#zespół)
 ## How to run:  

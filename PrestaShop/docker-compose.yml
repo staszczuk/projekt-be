@@ -42,7 +42,7 @@ services:
         - USER_ID=${USER_ID:-1000}
         - GROUP_ID=${GROUP_ID:-1000}
     environment:
-      DISABLE_MAKE: ${DISABLE_MAKE:-0}
+      DISABLE_MAKE: ${DISABLE_MAKE:-1}
       PS_INSTALL_AUTO: ${PS_INSTALL_AUTO:-1}
       DB_PASSWD: ${DB_PASSWD:-prestashop}
       DB_NAME: ${DB_NAME:-prestashop}
@@ -56,6 +56,7 @@ services:
       PS_DEV_MODE: ${PS_DEV_MODE:-0}
       ADMIN_MAIL: ${ADMIN_MAIL:-admin@prestashop.com}
       ADMIN_PASSWD: ${ADMIN_PASSWD:-admin}
+      PS_ENABLE_SSL: 1
     command: ["/tmp/wait-for-it.sh", "--timeout=60", "--strict", "mysql:3306", "--", "/tmp/docker_run_git.sh"]
     ports:
       - "8001:80"
