@@ -28,4 +28,6 @@ RUN apt install -y \
     apt-utils \
     mailutils
 
+RUN apt install nano
+
 CMD ["/tmp/docker_run_git.sh"]
