@@ -31,8 +31,6 @@ npm-debug.log.*
 
 # Images
 /img/*
-!/modules/ps_imageslider/*
-!/modules/ps_banner/*
 !/img/favicon.ico
 !/img/logo-1699824879.jpg
 !/img/.htaccess
@@ -176,6 +174,8 @@ app/config/config.php
 # Themes, modules and overrides
 
 modules/*
+!/modules/ps_imageslider/*
+!/modules/ps_banner/*
 override/*
 themes/*/
 !themes/classic
