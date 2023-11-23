@@ -174,8 +174,8 @@ app/config/config.php
 # Themes, modules and overrides
 
 modules/*
-!/modules/ps_imageslider/*
-!/modules/ps_banner/*
+!modules/ps_imageslider/*
+!modules/ps_banner/*
 override/*
 themes/*/
 !themes/classic
