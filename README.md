@@ -8,7 +8,11 @@ nor database (of course)
 
 - [projekt-be](#projekt-be)
   - [Zespół](#zespół)
-## How to run:  
+## How to run:   
+In docker-compose.yml set  
+>DISABLE_MAKE: ${DISABLE_MAKE:-0}
+
+and then execute:  
 docker-compose up  
  
 ## Info  
