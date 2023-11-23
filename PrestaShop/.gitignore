@@ -31,8 +31,8 @@ npm-debug.log.*
 
 # Images
 /img/*
-!/img/modules/ps_imageslider/*
-!/img/modules/ps_banner/*
+!/modules/ps_imageslider/*
+!/modules/ps_banner/*
 !/img/favicon.ico
 !/img/logo-1699824879.jpg
 !/img/.htaccess
