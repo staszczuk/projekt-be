@@ -1,0 +1,361 @@
+# Cache, temp and personal files
+
+PrestaShop/.htaccess
+PrestaShop/*.log
+PrestaShop/npm-debug.log.*
+PrestaShop/.sass-cache/
+PrestaShop/*.swp
+PrestaShop/*.swo
+PrestaShop/.cache/
+
+# Cache
+PrestaShop/cache/*
+!PrestaShop/cache/.htaccess
+!PrestaShop/cache/cachefs/index.php
+!PrestaShop/cache/deprecated.txt
+!PrestaShop/cache/index.php
+!PrestaShop/cache/purifier/index.php
+!PrestaShop/cache/push/activity
+!PrestaShop/cache/push/index.php
+!PrestaShop/cache/push/trends
+!PrestaShop/cache/sandbox/index.php
+!PrestaShop/cache/smarty/cache/index.php
+!PrestaShop/cache/smarty/compile/index.php
+!PrestaShop/cache/smarty/index.php
+!PrestaShop/cache/tcpdf/index.php
+
+# Download
+PrestaShop/download/*
+!PrestaShop/download/.htaccess
+!PrestaShop/download/index.php
+
+# Images
+PrestaShop/img/*
+!PrestaShop/img/.htaccess
+!PrestaShop/img/index.php
+!PrestaShop/img/404.gif
+!PrestaShop/img/app_icon.png
+!PrestaShop/img/bg_500.png
+!PrestaShop/img/bg_loader.png
+!PrestaShop/img/favicon.ico
+!PrestaShop/img/loader.gif
+!PrestaShop/img/loadingAnimation.gif
+!PrestaShop/img/logo.jpg
+!PrestaShop/img/logo.png
+!PrestaShop/img/logo_invoice.jpg
+!PrestaShop/img/logo_stores.png
+!PrestaShop/img/macFFBgHack.png
+!PrestaShop/img/prestashop-avatar.png
+!PrestaShop/img/prestashop@2x.png
+!PrestaShop/img/preston-login-wink@2x.png
+!PrestaShop/img/preston-login@2x.png
+!PrestaShop/img/questionmark.png
+!PrestaShop/img/genders/index.php
+!PrestaShop/img/admin/index.php
+!PrestaShop/img/c/index.php
+!PrestaShop/img/cms/index.php
+!PrestaShop/img/co/index.php
+!PrestaShop/img/e/index.php
+!PrestaShop/img/jquery-ui
+!PrestaShop/img/l/index.php
+!PrestaShop/img/m/index.php
+!PrestaShop/img/os/index.php
+!PrestaShop/img/p/index.php
+!PrestaShop/img/pr/index.php
+!PrestaShop/img/pr/default.jpg
+!PrestaShop/img/s/index.php
+!PrestaShop/img/scenes
+!PrestaShop/img/st/index.php
+!PrestaShop/img/su/index.php
+!PrestaShop/img/t/index.php
+!PrestaShop/img/tmp/index.php
+
+# Upload
+PrestaShop/upload/*
+!PrestaShop/upload/index.php
+!PrestaShop/upload/.htaccess
+
+PrestaShop/vendor/*
+PrestaShop/docs/phpdoc-sf/
+PrestaShop/*.hot-update.js
+PrestaShop/*.hot-update.json
+
+PrestaShop/tests-legacy/resources/modules/followup/
+PrestaShop/tests-legacy/resources/modules/ps_emailalerts/
+PrestaShop/tests-legacy/resources/modules/ps_emailsubscription/mails/
+PrestaShop/tests-legacy/resources/modules/referralprogram/
+
+# themes listed in the modules_to_hook section of the theme.yml
+PrestaShop/tests-legacy/resources/modules/blockreassurance
+PrestaShop/tests-legacy/resources/modules/ps_contactinfo
+PrestaShop/tests-legacy/resources/modules/ps_languageselector
+PrestaShop/tests-legacy/resources/modules/ps_currencyselector
+PrestaShop/tests-legacy/resources/modules/ps_customersignin
+PrestaShop/tests-legacy/resources/modules/ps_shoppingcart
+PrestaShop/tests-legacy/resources/modules/ps_mainmenu
+PrestaShop/tests-legacy/resources/modules/ps_searchbar
+PrestaShop/tests-legacy/resources/modules/ps_imageslider
+PrestaShop/tests-legacy/resources/modules/ps_customtext
+PrestaShop/tests-legacy/resources/modules/ps_socialfollow
+PrestaShop/tests-legacy/resources/modules/ps_linklist
+PrestaShop/tests-legacy/resources/modules/ps_customeraccountlinks
+PrestaShop/tests-legacy/resources/modules/ps_categorytree
+PrestaShop/tests-legacy/resources/modules/ps_facetedsearch
+PrestaShop/tests-legacy/resources/modules/ps_sharebuttons
+
+# Installed with test data maybe via API push
+PrestaShop/tests-legacy/resources/modules/ps_reminder
+
+PrestaShop/tests/Resources/img/l/*
+!PrestaShop/tests/Resources/img/l/.gitkeep
+PrestaShop/tests/Resources/img/p/*
+!PrestaShop/tests/Resources/img/p/.gitkeep
+PrestaShop/tests/Resources/img/os/*
+!PrestaShop/tests/Resources/img/os/.gitkeep
+PrestaShop/tests/Resources/img/genders/*
+!PrestaShop/tests/Resources/img/genders/.gitkeep
+PrestaShop/tests/Resources/img/c/*
+!PrestaShop/tests/Resources/img/c/.gitkeep
+PrestaShop/tests/Resources/img/tmp/*
+PrestaShop/tests/Resources/img/tmp/.gitkeep
+!PrestaShop/tests/Resources/download/.gitkeep
+PrestaShop/tests/Resources/download/*
+
+PrestaShop/admin-dev/autoupgrade/*
+!PrestaShop/admin-dev/autoupgrade/index.php
+!PrestaShop/admin-dev/autoupgrade/backup/index.php
+
+PrestaShop/admin-dev/backups/*
+!PrestaShop/admin-dev/backups/.htaccess
+
+PrestaShop/admin-dev/import/*
+!PrestaShop/admin-dev/import/.htaccess
+!PrestaShop/admin-dev/import/index.php
+
+PrestaShop/admin-dev/export/*
+!PrestaShop/admin-dev/export/.htaccess
+!PrestaShop/admin-dev/export/index.php
+
+# Downloaded RTL files
+PrestaShop/admin-dev/themes/default/css/bundle/default_rtl.css
+PrestaShop/admin-dev/themes/default/css/bundle/shared_rtl.css
+PrestaShop/admin-dev/themes/default/css/font_rtl.css
+PrestaShop/admin-dev/themes/default/css/overrides_rtl.css
+PrestaShop/admin-dev/themes/default/css/vendor/font-awesome/font-awesome_rtl.css
+PrestaShop/admin-dev/themes/default/css/vendor/nv.d3_rtl.css
+PrestaShop/admin-dev/themes/default/css/vendor/titatoggle-min_rtl.css
+PrestaShop/admin-dev/themes/default/public/theme_rtl.css
+PrestaShop/admin-dev/themes/default/public/*
+PrestaShop/admin-dev/themes/new-theme/css/module/drop_rtl.css
+PrestaShop/admin-dev/themes/new-theme/css/right-sidebar_rtl.css
+PrestaShop/admin-dev/themes/new-theme/public/*
+!PrestaShop/admin-dev/themes/new-theme/public/theme.rtlfix
+!PrestaShop/admin-dev/themes/default/public/theme.rtlfix
+
+PrestaShop/themes/*/cache/*
+PrestaShop/themes/core.js.map
+PrestaShop/themes/core.js
+
+
+# Config
+
+PrestaShop/config/defines_custom.inc.php
+PrestaShop/config/settings.inc.php
+PrestaShop/config/settings.old.php
+PrestaShop/config/xml/*
+PrestaShop/config/themes/*
+!PrestaShop/config/xml/themes/default.xml
+PrestaShop/themes/*/config/settings_*.json
+PrestaShop/app/config/parameters.old.yml
+PrestaShop/app/config/config.php
+
+# Themes, modules and overrides
+
+PrestaShop/modules/*
+PrestaShop/override/*
+PrestaShop/themes/*/
+!PrestaShop/themes/classic
+PrestaShop/themes/classic/assets
+!PrestaShop/themes/_core
+!PrestaShop/themes/_libraries
+PrestaShop/themes/classic/assets/css/*_rtl.css
+
+# Vendors and dependencies
+
+PrestaShop/bower_components/
+PrestaShop/node_modules/
+PrestaShop/composer.phar
+PrestaShop/php-cs-fixer
+PrestaShop/.grunt/*
+
+# Translations and emails templates
+
+PrestaShop/translations/*
+PrestaShop/mails/*
+!PrestaShop/mails/themes/
+!PrestaShop/mails/_partials/
+PrestaShop/themes/default-bootstrap/lang/*
+PrestaShop/themes/default-bootstrap/modules/*/translations/*.php
+PrestaShop/themes/default-bootstrap/mails/*
+!PrestaShop/themes/default-bootstrap/mails/en/
+PrestaShop/themes/default-bootstrap/modules/*/mails/*
+!PrestaShop/themes/default-bootstrap/modules/*/mails/en
+
+# MISC
+
+PrestaShop/*sitemap.xml
+PrestaShop/robots.txt
+
+# Symfony
+
+PrestaShop/bin/
+PrestaShop/.web-server-pid
+PrestaShop/app/Resources/geoip/GeoLite2-City.mmdb
+PrestaShop/app/Resources/translations/*
+!PrestaShop/app/Resources/translations/default
+PrestaShop/app/config/parameters.yml
+PrestaShop/app/config/parameters.php
+PrestaShop/build/
+PrestaShop/phpunit.xml
+PrestaShop/var/*
+!PrestaShop/var/cache
+PrestaShop/var/cache/*
+!PrestaShop/var/cache/.gitkeep
+!PrestaShop/var/logs
+PrestaShop/var/logs/*
+!PrestaShop/var/logs/.gitkeep
+!PrestaShop/var/sessions
+PrestaShop/var/sessions/*
+!PrestaShop/var/sessions/.gitkeep
+!PrestaShop/var/SymfonyRequirements.php
+PrestaShop/vendor/
+PrestaShop/web/bundles/
+
+
+# Created by https://www.gitignore.io/api/linux,osx,windows,sublimetext,phpstorm
+
+### Linux ###
+PrestaShop/*~
+
+# KDE directory preferences
+PrestaShop/.directory
+
+# Linux trash folder which might appear on any partition or disk
+PrestaShop/.Trash-*
+
+
+### OSX ###
+PrestaShop/.DS_Store
+PrestaShop/.AppleDouble
+PrestaShop/.LSOverride
+
+# Icon must end with two \r
+PrestaShop/Icon
+
+
+# Thumbnails
+PrestaShop/._*
+
+# Files that might appear in the root of a volume
+PrestaShop/.DocumentRevisions-V100
+PrestaShop/.fseventsd
+PrestaShop/.Spotlight-V100
+PrestaShop/.TemporaryItems
+PrestaShop/.Trashes
+PrestaShop/.VolumeIcon.icns
+
+# Directories potentially created on remote AFP share
+PrestaShop/.AppleDB
+PrestaShop/.AppleDesktop
+PrestaShop/Network Trash Folder
+PrestaShop/Temporary Items
+PrestaShop/.apdisk
+
+
+### Windows ###
+# Windows image file caches
+PrestaShop/Thumbs.db
+PrestaShop/ehthumbs.db
+
+# Folder config file
+PrestaShop/Desktop.ini
+
+# Recycle Bin used on file shares
+PrestaShop/$RECYCLE.BIN/
+
+# Windows Installer files
+PrestaShop/*.cab
+PrestaShop/*.msi
+PrestaShop/*.msm
+PrestaShop/*.msp
+
+# Windows shortcuts
+PrestaShop/*.lnk
+
+
+### SublimeText ###
+# cache files for sublime text
+PrestaShop/*.tmlanguage.cache
+PrestaShop/*.tmPreferences.cache
+PrestaShop/*.stTheme.cache
+
+# workspace files are user-specific
+PrestaShop/*.sublime-workspace
+
+# project files should be checked into the repository, unless a significant
+# proportion of contributors will probably not be using SublimeText
+# *.sublime-project
+
+# sftp configuration file
+PrestaShop/sftp-config.json
+
+
+### PhpStorm ###
+# Covers JetBrains IDEs: IntelliJ, RubyMine, PhpStorm, AppCode, PyCharm, CLion, Android Studio
+
+PrestaShop/*.iml
+
+## Directory-based project format:
+PrestaShop/.idea/
+
+## File-based project format:
+PrestaShop/*.ipr
+PrestaShop/*.iws
+
+## Plugin-specific files:
+
+# IntelliJ
+PrestaShop/out/
+
+# mpeltonen/sbt-idea plugin
+PrestaShop/.idea_modules/
+
+# JIRA plugin
+PrestaShop/atlassian-ide-plugin.xml
+
+# Crashlytics plugin (for Android Studio and IntelliJ)
+PrestaShop/com_crashlytics_export_strings.xml
+PrestaShop/crashlytics.properties
+PrestaShop/crashlytics-build.properties
+
+### NetBeans ###
+PrestaShop/nbproject/
+PrestaShop/nbbuild/
+PrestaShop/dist/
+PrestaShop/nbdist/
+PrestaShop/nbactions.xml
+PrestaShop/nb-configuration.xml
+PrestaShop/.nb-gradle/
+
+### Eclipse ###
+PrestaShop/.buildpath
+PrestaShop/.project
+PrestaShop/.settings/
+PrestaShop/.externalToolBuilders/
+
+### Release creation ###
+PrestaShop/tools/build/releases/*
+!PrestaShop/tools/build/releases/.gitkeep
+
+## Docker configuration
+PrestaShop/install.lock
