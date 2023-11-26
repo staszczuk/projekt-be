@@ -1,0 +1,3 @@
+[submodule "projekt-be-prestashop"]
+	path = projekt-be-prestashop
+	url = git@github.com:staszczuk/projekt-be-prestashop.git
