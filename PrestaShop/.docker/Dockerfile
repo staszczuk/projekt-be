@@ -28,10 +28,6 @@ ARG USER_ID
 #     apt-utils \
 #     mailutils
 
-<<<<<<< HEAD
-CMD ["/tmp/docker_run_git.sh"]
-=======
 RUN apt install -y nano
 
 # CMD ["/tmp/docker_run_git.sh"]
->>>>>>> dce7909 (dockerfile changed to work with our latest image of prestashop)
