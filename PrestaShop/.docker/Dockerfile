@@ -1,7 +1,7 @@
 # To run files with the same group as your primary user
 ARG VERSION
 
-FROM marziel/prestashop_be:added_ssl
+FROM marziel/prestashop_be:fix1
 
 ARG GROUP_ID
 ARG USER_ID
@@ -17,8 +17,8 @@ ARG USER_ID
 # RUN chown -R www-data:www-data /var/www/.npm
 
 # # These two directories are docker mounted volumes
-# RUN chown -R www-data:www-data /var/www/html/vendor
-# RUN chown -R www-data:www-data /var/www/html/var
+RUN chown -R www-data:www-data /var/www/html/vendor
+RUN chown -R www-data:www-data /var/www/html/var
 
 # RUN curl -sL https://deb.nodesource.com/setup_14.x | bash -
 # RUN apt install -y nodejs
