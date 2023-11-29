@@ -1,0 +1,4 @@
+Enabled;Name;Categories;Price;Tax rule ID;Buying price;On sale;Reference;Weight;Quantity;Short desc.;Long desc;Images URL
+1;Test;1,2,3;130;1;75;0;PROD-TEST;0.500;10;'Tis a short desc.;This is a long description.;http://www.myprestashop/images/product1.gif
+0;Test 02;1,5;110;1;65;0;PROD-TEST2;0.500;10;'Tis also a short desc.;This is a long description too.;http://www.myprestashop/images/product2.gif
+1;Test 03;4,5;150;1;85;0;PROD-TEST3;0.500;10;'Tis a short desc. again;This is also a long description.;http://www.myprestashop/images/product3.gif
