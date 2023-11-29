@@ -1,0 +1,39 @@
+{
+  "name": "prestashop/translationtools-bundle",
+  "description": "Translation tools for PrestaShop",
+  "keywords": ["translation", "parser", "prestashop"],
+  "license": "MIT",
+  "type": "bundle",
+  "authors": [
+    {
+      "name": "PrestaShop SA",
+      "email": "contact@prestashop.com"
+    },
+    {
+      "name": "PrestaShop Community",
+      "homepage": "http://contributors.prestashop.com/"
+    }
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "autoload": {
+    "psr-4": {
+      "PrestaShop\\TranslationToolsBundle\\": ""
+    }
+  },
+  "require": {
+    "php": ">=7.1",
+    "nikic/php-parser": "^4",
+    "smarty/smarty": "^3.1",
+    "symfony/twig-bridge": "^3.4 || ^4.4 || ^5.0",
+    "twig/twig": "^1.38 || ^2.7 || ^3.0"
+  },
+  "require-dev": {
+    "doctrine/common": "~2.10.0",
+    "friendsofphp/php-cs-fixer": "^2.18",
+    "phpunit/phpunit": "^7.5 || ^8.5",
+    "symfony/framework-bundle": "^3.4 || ^4.4 || ^5.0",
+    "symfony/translation": "^3.4 || ^4.4 || ^5.0"
+  }
+}
