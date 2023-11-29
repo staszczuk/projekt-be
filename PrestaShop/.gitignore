@@ -77,10 +77,10 @@ npm-debug.log.*
 !/upload/index.php
 !/upload/.htaccess
 
-/vendor/*
-/docs/phpdoc-sf/
-*.hot-update.js
-*.hot-update.json
+# /vendor/*
+# /docs/phpdoc-sf/
+# *.hot-update.js
+# *.hot-update.json
 
 tests-legacy/resources/modules/followup/
 tests-legacy/resources/modules/ps_emailalerts/
@@ -210,28 +210,28 @@ themes/default-bootstrap/modules/*/mails/*
 
 # Symfony
 
-/bin/
-/.web-server-pid
-/app/Resources/geoip/GeoLite2-City.mmdb
-/app/Resources/translations/*
-!/app/Resources/translations/default
-/app/config/parameters.yml
-/app/config/parameters.php
-/build/
-/phpunit.xml
-/var/*
-!/var/cache
-/var/cache/*
-!var/cache/.gitkeep
-!/var/logs
-/var/logs/*
-!var/logs/.gitkeep
-!/var/sessions
-/var/sessions/*
-!var/sessions/.gitkeep
-!var/SymfonyRequirements.php
-/vendor/
-/web/bundles/
+# /bin/
+# /.web-server-pid
+# /app/Resources/geoip/GeoLite2-City.mmdb
+# /app/Resources/translations/*
+# !/app/Resources/translations/default
+# /app/config/parameters.yml
+# /app/config/parameters.php
+# /build/
+# /phpunit.xml
+# /var/*
+# !/var/cache
+# /var/cache/*
+# !var/cache/.gitkeep
+# !/var/logs
+# /var/logs/*
+# !var/logs/.gitkeep
+# !/var/sessions
+# /var/sessions/*
+# !var/sessions/.gitkeep
+# !var/SymfonyRequirements.php
+# /vendor/
+# /web/bundles/
 
 
 # Created by https://www.gitignore.io/api/linux,osx,windows,sublimetext,phpstorm
