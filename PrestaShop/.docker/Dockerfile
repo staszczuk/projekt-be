@@ -1,7 +1,7 @@
 # To run files with the same group as your primary user
 ARG VERSION
 
-FROM marziel/prestashop_be:latest
+FROM marziel/prestashop_be:added_ssl
 
 ARG GROUP_ID
 ARG USER_ID
