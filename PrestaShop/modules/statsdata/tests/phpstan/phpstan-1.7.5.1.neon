@@ -1,6 +1,0 @@
-includes:
-	- %currentWorkingDirectory%/tests/phpstan/phpstan.neon
-
-parameters:
-  ignoreErrors:
-    - '#Property ObjectModelCore::\$id \(int\) does not accept null.#'

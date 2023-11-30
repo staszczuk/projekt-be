@@ -1,9 +1,0 @@
-change-template: '- $TITLE (#$NUMBER)'
-template: |
-    ## Changelog
-
-    $CHANGES
-
-    ### Contributors
-
-    $CONTRIBUTORS
