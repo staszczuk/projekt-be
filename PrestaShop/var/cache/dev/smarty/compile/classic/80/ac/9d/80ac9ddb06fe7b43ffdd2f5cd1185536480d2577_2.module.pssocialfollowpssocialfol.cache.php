@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-11-30 17:31:17
+/* Smarty version 3.1.48, created on 2023-11-30 17:57:35
   from 'module:pssocialfollowpssocialfol' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_6568b8d5def946_58496997',
+  'unifunc' => 'content_6568beff525a27_84481751',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '80ac9ddb06fe7b43ffdd2f5cd1185536480d2577' => 
     array (
       0 => 'module:pssocialfollowpssocialfol',
-      1 => 1695632534,
+      1 => 1701362504,
       2 => 'module',
     ),
   ),
@@ -20,24 +20,24 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6568b8d5def946_58496997 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6568beff525a27_84481751 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->_loadInheritance();
 $_smarty_tpl->inheritance->init($_smarty_tpl, false);
-$_smarty_tpl->compiled->nocache_hash = '18436859106568b8d5ded8c3_10871211';
+$_smarty_tpl->compiled->nocache_hash = '11944782796568beff523549_24594429';
 ?>
 <!-- begin /var/www/html/themes/classic/modules/ps_socialfollow/ps_socialfollow.tpl -->
 <?php 
-$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_7133934796568b8d5dede67_22332671', 'block_social');
+$_smarty_tpl->inheritance->instanceBlock($_smarty_tpl, 'Block_15866906426568beff523c55_57225397', 'block_social');
 ?>
 
 <!-- end /var/www/html/themes/classic/modules/ps_socialfollow/ps_socialfollow.tpl --><?php }
 /* {block 'block_social'} */
-class Block_7133934796568b8d5dede67_22332671 extends Smarty_Internal_Block
+class Block_15866906426568beff523c55_57225397 extends Smarty_Internal_Block
 {
 public $subBlocks = array (
   'block_social' => 
   array (
-    0 => 'Block_7133934796568b8d5dede67_22332671',
+    0 => 'Block_15866906426568beff523c55_57225397',
   ),
 );
 public function callBlock(Smarty_Internal_Template $_smarty_tpl) {

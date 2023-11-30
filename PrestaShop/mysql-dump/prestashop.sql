@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: mysql:3306
--- Generation Time: Lis 30, 2023 at 04:34 PM
+-- Generation Time: Lis 30, 2023 at 04:59 PM
 -- Wersja serwera: 5.7.44
 -- Wersja PHP: 8.2.8
 
@@ -908,7 +908,8 @@ INSERT INTO `ps_address` (`id_address`, `id_country`, `id_state`, `id_customer`,
 (3, 21, 35, 0, 0, 1, 0, 'supplier', 'Fashion', 'supplier', 'supplier', '767 Fifth Ave.', '', '10153', 'New York', '', '(212) 336-1440', '', '', '', '2023-11-30 17:31:00', '2023-11-30 17:31:00', 1, 0),
 (4, 21, 35, 0, 1, 0, 0, 'manufacturer', 'Fashion', 'manufacturer', 'manufacturer', '767 Fifth Ave.', '', '10154', 'New York', '', '(212) 336-1666', '', '', '', '2023-11-30 17:31:00', '2023-11-30 17:31:00', 1, 0),
 (5, 21, 12, 2, 0, 0, 0, 'My address', 'My Company', 'DOE', 'John', '16, Main street', '2nd floor', '33133', 'Miami', '', '0102030405', '', '', '', '2023-11-30 17:31:00', '2023-11-30 17:31:00', 1, 0),
-(6, 8, 0, 0, 0, 2, 0, 'accessories_supplier', 'Accessories and Co', 'accessories', 'accessories', '42 Avenue Maréchal Soult', '', '64990', 'Bayonne', '', '0102030405', '', '', '', '2023-11-30 17:31:00', '2023-11-30 17:31:00', 1, 0);
+(6, 8, 0, 0, 0, 2, 0, 'accessories_supplier', 'Accessories and Co', 'accessories', 'accessories', '42 Avenue Maréchal Soult', '', '64990', 'Bayonne', '', '0102030405', '', '', '', '2023-11-30 17:31:00', '2023-11-30 17:31:00', 1, 0),
+(7, 14, 0, 3, 0, 0, 0, 'Mój adres', '', 'Zieliński', 'Marcel', 'Nałkowskiej 11', '', '82-300', 'Elbląg', '', '', '', '', '', '2023-11-30 17:50:14', '2023-11-30 17:50:14', 1, 0);
 
 -- --------------------------------------------------------
 
@@ -2495,7 +2496,9 @@ INSERT INTO `ps_cart` (`id_cart`, `id_shop_group`, `id_shop`, `id_carrier`, `del
 (2, 1, 1, 2, '{\"3\":\"2,\"}', 1, 5, 5, 1, 2, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2023-11-30 17:31:00', '2023-11-30 17:31:00', NULL),
 (3, 1, 1, 2, '{\"3\":\"2,\"}', 1, 5, 5, 1, 2, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2023-11-30 17:31:00', '2023-11-30 17:31:00', NULL),
 (4, 1, 1, 2, '{\"3\":\"2,\"}', 1, 5, 5, 1, 2, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2023-11-30 17:31:00', '2023-11-30 17:31:00', NULL),
-(5, 1, 1, 2, '{\"3\":\"2,\"}', 1, 5, 5, 1, 2, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2023-11-30 17:31:00', '2023-11-30 17:31:00', NULL);
+(5, 1, 1, 2, '{\"3\":\"2,\"}', 1, 5, 5, 1, 2, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 0, 0, '', 0, 0, '2023-11-30 17:31:00', '2023-11-30 17:31:00', NULL),
+(6, 1, 1, 1, '{\"7\":\"1,\"}', 1, 7, 7, 1, 3, 4, '50b40d9583c95f6477c83442b0c88665', 0, 0, '', 0, 0, '2023-11-30 17:46:07', '2023-11-30 17:50:28', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"d9cd03755725ea66307cc36e63862c17c8aac358\"}'),
+(7, 1, 1, 1, '{\"7\":\"1,\"}', 1, 7, 7, 1, 3, 4, '50b40d9583c95f6477c83442b0c88665', 0, 0, '', 0, 0, '2023-11-30 17:57:40', '2023-11-30 17:57:49', '{\"checkout-personal-information-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-addresses-step\":{\"step_is_reachable\":true,\"step_is_complete\":true,\"use_same_address\":true},\"checkout-delivery-step\":{\"step_is_reachable\":true,\"step_is_complete\":true},\"checkout-payment-step\":{\"step_is_reachable\":true,\"step_is_complete\":false},\"checksum\":\"541590809f053519d65d8e96c48fd4a2209529d6\"}');
 
 -- --------------------------------------------------------
 
@@ -2536,7 +2539,9 @@ INSERT INTO `ps_cart_product` (`id_cart`, `id_product`, `id_address_delivery`, `
 (2, 8, 3, 1, 0, 0, 1, '0000-00-00 00:00:00'),
 (3, 16, 3, 1, 28, 0, 1, '0000-00-00 00:00:00'),
 (4, 16, 3, 1, 29, 0, 1, '0000-00-00 00:00:00'),
-(5, 10, 3, 1, 25, 0, 1, '0000-00-00 00:00:00');
+(5, 10, 3, 1, 25, 0, 1, '0000-00-00 00:00:00'),
+(6, 1, 7, 1, 6, 0, 1, '2023-11-30 17:46:17'),
+(7, 2, 7, 1, 9, 0, 1, '2023-11-30 17:57:40');
 
 -- --------------------------------------------------------
 
@@ -3448,7 +3453,7 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (368, NULL, NULL, 'PSGDPR_CUSTOMER_FORM', NULL, '2023-11-30 17:30:49', '2023-11-30 17:30:49'),
 (369, NULL, NULL, 'PSGDPR_ANONYMOUS_CUSTOMER', '1', '2023-11-30 17:30:50', '2023-11-30 17:30:50'),
 (370, NULL, NULL, 'PSGDPR_ANONYMOUS_ADDRESS', '1', '2023-11-30 17:30:50', '2023-11-30 17:30:50'),
-(371, NULL, NULL, 'PS_MBO_SHOP_ADMIN_UUID', '19d4869e-8758-4c8a-88bb-5f0bf3169abd', '2023-11-30 17:30:50', '2023-11-30 17:30:50'),
+(371, NULL, NULL, 'PS_MBO_SHOP_ADMIN_UUID', 'a786e2ec-42a4-442a-98cb-c473658bdfbd', '2023-11-30 17:30:50', '2023-11-30 17:56:33'),
 (372, NULL, NULL, 'CONF_PS_CHECKOUT_FIXED', '0.2', '2023-11-30 17:30:50', '2023-11-30 17:30:50'),
 (373, NULL, NULL, 'CONF_PS_CHECKOUT_VAR', '2', '2023-11-30 17:30:50', '2023-11-30 17:30:50'),
 (374, NULL, NULL, 'CONF_PS_CHECKOUT_FIXED_FOREIGN', '0.2', '2023-11-30 17:30:50', '2023-11-30 17:30:50'),
@@ -3501,7 +3506,13 @@ INSERT INTO `ps_configuration` (`id_configuration`, `id_shop_group`, `id_shop`, 
 (421, NULL, NULL, 'PS_LAYERED_FILTER_PRICE_ROUNDING', '1', '2023-11-30 17:31:03', '2023-11-30 17:31:03'),
 (422, NULL, NULL, 'PS_LAYERED_FILTER_SHOW_OUT_OF_STOCK_LAST', '0', '2023-11-30 17:31:03', '2023-11-30 17:31:03'),
 (423, NULL, NULL, 'PS_LAYERED_FILTER_BY_DEFAULT_CATEGORY', '0', '2023-11-30 17:31:03', '2023-11-30 17:31:03'),
-(424, NULL, NULL, 'PS_LAYERED_INDEXED', '1', '2023-11-30 17:31:04', '2023-11-30 17:31:04');
+(424, NULL, NULL, 'PS_LAYERED_INDEXED', '1', '2023-11-30 17:31:04', '2023-11-30 17:31:04'),
+(425, NULL, NULL, 'ONBOARDINGV2_SHUT_DOWN', '1', '2023-11-30 17:48:10', '2023-11-30 17:48:10'),
+(426, NULL, NULL, 'BANK_WIRE_DETAILS', 'Numer IBAN: PL61109010140000071219812874\r\nSWIFT/BIC: BREXPLPWMBK', '2023-11-30 17:56:18', '2023-11-30 17:56:18'),
+(427, NULL, NULL, 'BANK_WIRE_OWNER', 'Marcel Zielinski', '2023-11-30 17:56:18', '2023-11-30 17:56:18'),
+(428, NULL, NULL, 'BANK_WIRE_ADDRESS', 'Bank Fikcyjny Sp. z o.o.\r\nul. Bankowa 10\r\n00-001 Fikcję Miastowo\r\nPolska', '2023-11-30 17:56:18', '2023-11-30 17:56:18'),
+(429, NULL, NULL, 'BANK_WIRE_RESERVATION_DAYS', NULL, '2023-11-30 17:56:18', '2023-11-30 17:56:18'),
+(430, NULL, NULL, 'BANK_WIRE_CUSTOM_TEXT', NULL, '2023-11-30 17:56:18', '2023-11-30 17:56:18');
 
 -- --------------------------------------------------------
 
@@ -3610,7 +3621,8 @@ INSERT INTO `ps_configuration_lang` (`id_configuration`, `id_lang`, `value`, `da
 (328, 1, 'The personal data you provide is used to answer queries, process orders or allow access to specific information. You have the right to modify and delete all the personal information found in the \"My Account\" page.', '2023-11-30 17:30:16'),
 (330, 1, 'Możesz zrezygnować w każdej chwili. W tym celu należy odnaleźć szczegóły w naszej informacji prawnej.', '2023-11-30 17:30:16'),
 (366, 1, 'Akceptuję ogólne warunki użytkowania i politykę prywatności', '2023-11-30 17:30:49'),
-(368, 1, 'Akceptuję ogólne warunki użytkowania i politykę prywatności', '2023-11-30 17:30:49');
+(368, 1, 'Akceptuję ogólne warunki użytkowania i politykę prywatności', '2023-11-30 17:30:49'),
+(430, 1, '', '2023-11-30 17:56:18');
 
 -- --------------------------------------------------------
 
@@ -3635,7 +3647,8 @@ CREATE TABLE `ps_connections` (
 
 INSERT INTO `ps_connections` (`id_connections`, `id_shop_group`, `id_shop`, `id_guest`, `id_page`, `ip_address`, `date_add`, `http_referer`) VALUES
 (1, 1, 1, 1, 1, 2130706433, '2023-11-30 17:31:02', 'https://www.prestashop.com'),
-(2, 1, 1, 3, 1, 2886860801, '2023-11-30 17:31:17', '');
+(2, 1, 1, 3, 1, 2886860801, '2023-11-30 17:31:17', ''),
+(3, 1, 1, 4, 1, 2886860801, '2023-11-30 17:45:32', '');
 
 -- --------------------------------------------------------
 
@@ -3664,6 +3677,37 @@ CREATE TABLE `ps_connections_source` (
   `keywords` varchar(255) DEFAULT NULL,
   `date_add` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ps_connections_source`
+--
+
+INSERT INTO `ps_connections_source` (`id_connections_source`, `id_connections`, `http_referer`, `request_uri`, `keywords`, `date_add`) VALUES
+(1, 3, 'http://localhost:8001/', 'localhost:8001/men/1-1-hummingbird-printed-t-shirt.html', '', '2023-11-30 17:45:35'),
+(2, 3, 'http://localhost:8001/men/1-1-hummingbird-printed-t-shirt.html', 'localhost:8001/logowanie?back=my-account', '', '2023-11-30 17:45:37'),
+(3, 3, 'http://localhost:8001/logowanie?back=my-account', 'localhost:8001/logowanie?back=my-account', '', '2023-11-30 17:45:41'),
+(4, 3, 'http://localhost:8001/logowanie?back=my-account', 'localhost:8001/logowanie?create_account=1', '', '2023-11-30 17:45:44'),
+(5, 3, 'http://localhost:8001/logowanie?create_account=1', 'localhost:8001/', '', '2023-11-30 17:46:07'),
+(6, 3, 'http://localhost:8001/', 'localhost:8001/men/1-1-hummingbird-printed-t-shirt.html', '', '2023-11-30 17:46:09'),
+(7, 3, 'http://localhost:8001/men/1-6-hummingbird-printed-t-shirt.html', 'localhost:8001/koszyk?action=show', '', '2023-11-30 17:46:19'),
+(8, 3, 'http://localhost:8001/koszyk?action=show', 'localhost:8001/zam%C3%B3wienie', '', '2023-11-30 17:46:20'),
+(9, 3, 'http://localhost:8001/zam%C3%B3wienie', 'localhost:8001/', '', '2023-11-30 17:47:45'),
+(10, 3, 'http://localhost:8001/', 'localhost:8001/koszyk?action=show', '', '2023-11-30 17:49:55'),
+(11, 3, 'http://localhost:8001/koszyk?action=show', 'localhost:8001/zam%C3%B3wienie', '', '2023-11-30 17:49:56'),
+(12, 3, 'http://localhost:8001/zam%C3%B3wienie', 'localhost:8001/zam%C3%B3wienie', '', '2023-11-30 17:50:14'),
+(13, 3, 'http://localhost:8001/zam%C3%B3wienie', 'localhost:8001/zam%C3%B3wienie', '', '2023-11-30 17:50:28'),
+(14, 3, 'http://localhost:8001/zam%C3%B3wienie', 'localhost:8001/potwierdzenie-zamowienia?id_cart=6&id_module=35&id_order=6&key=50b40d9583c95f6477c83442b0c88665', '', '2023-11-30 17:50:38'),
+(15, 3, 'http://localhost:8001/potwierdzenie-zamowienia?id_cart=6&id_module=35&id_order=6&key=50b40d9583c95f6477c83442b0c88665', 'localhost:8001/', '', '2023-11-30 17:50:56'),
+(16, 3, 'http://localhost:8001/', 'localhost:8001/moje-konto', '', '2023-11-30 17:51:32'),
+(17, 3, 'http://localhost:8001/moje-konto', 'localhost:8001/historia-zamowien', '', '2023-11-30 17:51:33'),
+(18, 3, 'http://localhost:8001/moje-konto', 'localhost:8001/historia-zamowien', '', '2023-11-30 17:57:35'),
+(19, 3, 'http://localhost:8001/historia-zamowien', 'localhost:8001/', '', '2023-11-30 17:57:37'),
+(20, 3, 'http://localhost:8001/', 'localhost:8001/women/2-9-brown-bear-printed-sweater.html', '', '2023-11-30 17:57:38'),
+(21, 3, 'http://localhost:8001/women/2-9-brown-bear-printed-sweater.html', 'localhost:8001/koszyk?action=show', '', '2023-11-30 17:57:42'),
+(22, 3, 'http://localhost:8001/koszyk?action=show', 'localhost:8001/zam%C3%B3wienie', '', '2023-11-30 17:57:43'),
+(23, 3, 'http://localhost:8001/zam%C3%B3wienie', 'localhost:8001/zam%C3%B3wienie', '', '2023-11-30 17:57:45'),
+(24, 3, 'http://localhost:8001/zam%C3%B3wienie', 'localhost:8001/zam%C3%B3wienie', '', '2023-11-30 17:57:49'),
+(25, 3, 'http://localhost:8001/zam%C3%B3wienie', 'localhost:8001/potwierdzenie-zamowienia?id_cart=7&id_module=35&id_order=7&key=50b40d9583c95f6477c83442b0c88665', '', '2023-11-30 17:57:52');
 
 -- --------------------------------------------------------
 
@@ -4624,7 +4668,8 @@ CREATE TABLE `ps_customer` (
 
 INSERT INTO `ps_customer` (`id_customer`, `id_shop_group`, `id_shop`, `id_gender`, `id_default_group`, `id_lang`, `id_risk`, `company`, `siret`, `ape`, `firstname`, `lastname`, `email`, `passwd`, `last_passwd_gen`, `birthday`, `newsletter`, `ip_registration_newsletter`, `newsletter_date_add`, `optin`, `website`, `outstanding_allow_amount`, `show_public_prices`, `max_payment_days`, `secure_key`, `note`, `active`, `is_guest`, `deleted`, `date_add`, `date_upd`, `reset_password_token`, `reset_password_validity`) VALUES
 (1, 1, 1, 1, 3, 1, 0, '', '', '', 'Anonymous', 'Anonymous', 'anonymous@psgdpr.com', '$2y$10$cNkGrYssd5Qnx/2KFmxOOO779y1MyKTiJzDNqympvnMl7UoJ.Eq7y', '2023-11-30 11:30:50', '0000-00-00', 0, '', '0000-00-00 00:00:00', 0, '', 0.000000, 0, 0, '51b72efe56f29f55a611c53e35679bf3', '', 0, 0, 0, '2023-11-30 17:30:50', '2023-11-30 17:30:50', '', '0000-00-00 00:00:00'),
-(2, 1, 1, 1, 3, 1, 0, '', '', '', 'John', 'DOE', 'pub@prestashop.com', '1c45529ef00ff70388138b56e4c87638', '2023-11-30 11:31:00', '1970-01-15', 1, '', '2013-12-13 08:19:15', 1, '', 0.000000, 0, 0, 'a5c5c17a0601c495995155b05bf2884a', '', 1, 0, 0, '2023-11-30 17:31:00', '2023-11-30 17:31:00', '', '0000-00-00 00:00:00');
+(2, 1, 1, 1, 3, 1, 0, '', '', '', 'John', 'DOE', 'pub@prestashop.com', '1c45529ef00ff70388138b56e4c87638', '2023-11-30 11:31:00', '1970-01-15', 1, '', '2013-12-13 08:19:15', 1, '', 0.000000, 0, 0, 'a5c5c17a0601c495995155b05bf2884a', '', 1, 0, 0, '2023-11-30 17:31:00', '2023-11-30 17:31:00', '', '0000-00-00 00:00:00'),
+(3, 1, 1, 1, 3, 1, 0, '', '', '', 'Marcel', 'Zieliński', 'marziel2001@gmail.com', '$2y$10$pcdnc14LyAZMwr3e04SeZ.hB6LkLY0S9RPZxXNWZJEKyeN5B6e27O', '2023-11-30 11:46:07', '2001-08-01', 1, '', '2023-11-30 17:46:07', 1, '', 0.000000, 0, 0, '50b40d9583c95f6477c83442b0c88665', '', 1, 0, 0, '2023-11-30 17:46:07', '2023-11-30 17:46:07', '', '0000-00-00 00:00:00');
 
 -- --------------------------------------------------------
 
@@ -4643,7 +4688,8 @@ CREATE TABLE `ps_customer_group` (
 
 INSERT INTO `ps_customer_group` (`id_customer`, `id_group`) VALUES
 (1, 3),
-(2, 3);
+(2, 3),
+(3, 3);
 
 -- --------------------------------------------------------
 
@@ -4664,6 +4710,13 @@ CREATE TABLE `ps_customer_message` (
   `private` tinyint(4) NOT NULL DEFAULT '0',
   `read` tinyint(1) NOT NULL DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ps_customer_message`
+--
+
+INSERT INTO `ps_customer_message` (`id_customer_message`, `id_customer_thread`, `id_employee`, `message`, `file_name`, `ip_address`, `user_agent`, `date_add`, `date_upd`, `private`, `read`) VALUES
+(1, 1, 0, 'komentarz marcela testowy', '', '', '', '2023-11-30 17:50:37', '2023-11-30 17:50:37', 0, 0);
 
 -- --------------------------------------------------------
 
@@ -4687,6 +4740,13 @@ CREATE TABLE `ps_customer_session` (
   `token` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+--
+-- Dumping data for table `ps_customer_session`
+--
+
+INSERT INTO `ps_customer_session` (`id_customer_session`, `id_customer`, `token`) VALUES
+(1, 3, '0a6ff23ed4b16ae63c50fb65f29fb4c62533e6c1');
+
 -- --------------------------------------------------------
 
 --
@@ -4707,6 +4767,13 @@ CREATE TABLE `ps_customer_thread` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ps_customer_thread`
+--
+
+INSERT INTO `ps_customer_thread` (`id_customer_thread`, `id_shop`, `id_lang`, `id_contact`, `id_customer`, `id_order`, `id_product`, `status`, `email`, `token`, `date_add`, `date_upd`) VALUES
+(1, 1, 1, 0, 3, 6, 0, 'open', 'marziel2001@gmail.com', 'tiHF8ETrvFSS', '2023-11-30 17:50:37', '2023-11-30 17:50:37');
 
 -- --------------------------------------------------------
 
@@ -4896,7 +4963,7 @@ CREATE TABLE `ps_employee` (
 --
 
 INSERT INTO `ps_employee` (`id_employee`, `id_profile`, `id_lang`, `lastname`, `firstname`, `email`, `passwd`, `last_passwd_gen`, `stats_date_from`, `stats_date_to`, `stats_compare_from`, `stats_compare_to`, `stats_compare_option`, `preselect_date_range`, `bo_color`, `bo_theme`, `bo_css`, `default_tab`, `bo_width`, `bo_menu`, `active`, `optin`, `id_last_order`, `id_last_customer_message`, `id_last_customer`, `last_connection_date`, `reset_password_token`, `reset_password_validity`, `has_enabled_gravatar`) VALUES
-(1, 1, 1, 'Doe', 'John', 'admin@prestashop.com', '$2y$10$GmrOyqZUHyqrrnOC/ZW0C.58wZcWO22/7E6kZNEBmVr8F.ZknIVPq', '2023-11-30 11:30:12', '2023-10-30', '2023-11-30', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, NULL, NULL, '0000-00-00 00:00:00', 0);
+(1, 1, 1, 'Doe', 'John', 'admin@prestashop.com', '$2y$10$GmrOyqZUHyqrrnOC/ZW0C.58wZcWO22/7E6kZNEBmVr8F.ZknIVPq', '2023-11-30 11:30:12', '2023-10-30', '2023-11-30', '0000-00-00', '0000-00-00', 1, NULL, NULL, 'default', 'theme.css', 1, 0, 1, 1, NULL, 0, 0, 0, '2023-11-30', NULL, '0000-00-00 00:00:00', 0);
 
 -- --------------------------------------------------------
 
@@ -4909,6 +4976,13 @@ CREATE TABLE `ps_employee_session` (
   `id_employee` int(10) UNSIGNED DEFAULT NULL,
   `token` varchar(40) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ps_employee_session`
+--
+
+INSERT INTO `ps_employee_session` (`id_employee_session`, `id_employee`, `token`) VALUES
+(1, 1, 'd5ec2e1b401f310532b37c2fff5393104071657f');
 
 -- --------------------------------------------------------
 
@@ -5282,7 +5356,8 @@ CREATE TABLE `ps_guest` (
 INSERT INTO `ps_guest` (`id_guest`, `id_operating_system`, `id_web_browser`, `id_customer`, `javascript`, `screen_resolution_x`, `screen_resolution_y`, `screen_color`, `sun_java`, `adobe_flash`, `adobe_director`, `apple_quicktime`, `real_player`, `windows_media`, `accept_language`, `mobile_theme`) VALUES
 (1, 0, 0, 2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
 (2, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, '', 0),
-(3, 8, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0);
+(3, 8, 11, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0),
+(4, 8, 11, 3, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 'pl', 0);
 
 -- --------------------------------------------------------
 
@@ -7437,7 +7512,10 @@ INSERT INTO `ps_log` (`id_log`, `severity`, `error_code`, `message`, `object_typ
 (224, 1, 0, 'Protect vendor folder in module blockreassurance', '', 0, 1, NULL, 1, 0, 1, '2023-11-30 17:30:54', '2023-11-30 17:30:54'),
 (225, 1, 0, 'Module blockreassurance has no vendor folder', '', 0, 1, NULL, 1, 0, 1, '2023-11-30 17:30:54', '2023-11-30 17:30:54'),
 (226, 1, 0, 'Protect vendor folder in module ps_facetedsearch', '', 0, 1, NULL, 1, 0, 1, '2023-11-30 17:31:04', '2023-11-30 17:31:04'),
-(227, 1, 0, 'Module ps_facetedsearch has no vendor folder', '', 0, 1, NULL, 1, 0, 1, '2023-11-30 17:31:04', '2023-11-30 17:31:04');
+(227, 1, 0, 'Module ps_facetedsearch has no vendor folder', '', 0, 1, NULL, 1, 0, 1, '2023-11-30 17:31:04', '2023-11-30 17:31:04'),
+(228, 1, 0, 'Połączenie z panelem administracyjnym z 172.18.0.1', '', 0, NULL, NULL, 1, 1, 1, '2023-11-30 17:48:08', '2023-11-30 17:48:08'),
+(229, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 6, 1, NULL, 1, 0, 0, '2023-11-30 17:50:38', '2023-11-30 17:50:38'),
+(230, 1, 0, 'Frontcontroller::init - Cart cannot be loaded or an order has already been placed using this cart', 'Cart', 7, 1, NULL, 1, 0, 0, '2023-11-30 17:57:52', '2023-11-30 17:57:52');
 
 -- --------------------------------------------------------
 
@@ -7453,6 +7531,17 @@ CREATE TABLE `ps_mail` (
   `id_lang` int(11) UNSIGNED NOT NULL,
   `date_add` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ps_mail`
+--
+
+INSERT INTO `ps_mail` (`id_mail`, `recipient`, `template`, `subject`, `id_lang`, `date_add`) VALUES
+(1, 'marziel2001@gmail.com', 'account', '[PrestaShop] Witaj !', 1, '2023-11-30 17:46:07'),
+(2, 'marziel2001@gmail.com', 'bankwire', '[PrestaShop] Oczekiwanie na płatność przelewem', 1, '2023-11-30 17:50:38'),
+(3, 'marziel2001@gmail.com', 'order_conf', '[PrestaShop] Potwierdzenie zamówienia', 1, '2023-11-30 17:50:38'),
+(4, 'marziel2001@gmail.com', 'bankwire', '[PrestaShop] Oczekiwanie na płatność przelewem', 1, '2023-11-30 17:57:52'),
+(5, 'marziel2001@gmail.com', 'order_conf', '[PrestaShop] Potwierdzenie zamówienia', 1, '2023-11-30 17:57:52');
 
 -- --------------------------------------------------------
 
@@ -7548,6 +7637,13 @@ CREATE TABLE `ps_message` (
   `private` tinyint(1) UNSIGNED NOT NULL DEFAULT '1',
   `date_add` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ps_message`
+--
+
+INSERT INTO `ps_message` (`id_message`, `id_cart`, `id_customer`, `id_employee`, `id_order`, `message`, `private`, `date_add`) VALUES
+(1, 6, 3, 0, 6, 'komentarz marcela testowy', 0, '2023-11-30 17:50:28');
 
 -- --------------------------------------------------------
 
@@ -8492,6 +8588,14 @@ CREATE TABLE `ps_module_history` (
   `date_upd` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
+--
+-- Dumping data for table `ps_module_history`
+--
+
+INSERT INTO `ps_module_history` (`id`, `id_employee`, `id_module`, `date_add`, `date_upd`) VALUES
+(1, 1, 14, '2023-11-30 17:52:59', '2023-11-30 17:52:59'),
+(2, 1, 35, '2023-11-30 17:53:09', '2023-11-30 17:53:09');
+
 -- --------------------------------------------------------
 
 --
@@ -8536,7 +8640,6 @@ INSERT INTO `ps_module_shop` (`id_module`, `id_shop`, `enable_device`) VALUES
 (11, 1, 7),
 (12, 1, 3),
 (13, 1, 7),
-(14, 1, 7),
 (15, 1, 7),
 (16, 1, 7),
 (17, 1, 7),
@@ -8675,7 +8778,9 @@ INSERT INTO `ps_orders` (`id_order`, `reference`, `id_shop_group`, `id_shop`, `i
 (2, 'OHSATSERP', 1, 1, 2, 1, 2, 2, 1, 5, 5, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 'Payment by check', 1.000000, 'ps_checkpayment', 0, 0, '', 0, '', 0.000000, 0.000000, 0.000000, 169.900000, 169.900000, 169.900000, 0.000000, 169.900000, 169.900000, 0.000000, 0.000000, 0.000000, 0.000, 0.000000, 0.000000, 0.000000, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2023-11-30 17:31:02', '2023-11-30 17:31:02', ''),
 (3, 'UOYEVOLI', 1, 1, 2, 1, 2, 3, 1, 5, 5, 8, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 'Payment by check', 1.000000, 'ps_checkpayment', 0, 0, '', 0, '', 0.000000, 0.000000, 0.000000, 14.900000, 21.300000, 19.900000, 0.000000, 12.900000, 12.900000, 7.000000, 8.400000, 7.000000, 0.000, 0.000000, 0.000000, 0.000000, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2023-11-30 17:31:02', '2023-11-30 17:31:02', ''),
 (4, 'FFATNOMMJ', 1, 1, 2, 1, 2, 4, 1, 5, 5, 1, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 'Payment by check', 1.000000, 'ps_checkpayment', 0, 0, '', 0, '', 0.000000, 0.000000, 0.000000, 14.900000, 21.300000, 19.900000, 0.000000, 12.900000, 12.900000, 7.000000, 8.400000, 7.000000, 0.000, 0.000000, 0.000000, 0.000000, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2023-11-30 17:31:02', '2023-11-30 17:31:02', ''),
-(5, 'KHWLILZLL', 1, 1, 2, 1, 2, 5, 1, 5, 5, 10, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 'Bank wire', 1.000000, 'ps_wirepayment', 0, 0, '', 0, '', 0.000000, 0.000000, 0.000000, 20.900000, 27.300000, 25.900000, 0.000000, 18.900000, 18.900000, 7.000000, 8.400000, 7.000000, 0.000, 0.000000, 0.000000, 0.000000, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2023-11-30 17:31:02', '2023-11-30 17:31:02', '');
+(5, 'KHWLILZLL', 1, 1, 2, 1, 2, 5, 1, 5, 5, 10, 'b44a6d9efd7a0076a0fbce6b15eaf3b1', 'Bank wire', 1.000000, 'ps_wirepayment', 0, 0, '', 0, '', 0.000000, 0.000000, 0.000000, 20.900000, 27.300000, 25.900000, 0.000000, 18.900000, 18.900000, 7.000000, 8.400000, 7.000000, 0.000, 0.000000, 0.000000, 0.000000, 0, 0, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2023-11-30 17:31:02', '2023-11-30 17:31:02', ''),
+(6, 'JHWBTMKRK', 1, 1, 1, 1, 3, 6, 1, 7, 7, 10, '50b40d9583c95f6477c83442b0c88665', 'Płatności elektroniczne', 1.000000, 'ps_wirepayment', 0, 0, '', 0, '', 0.000000, 0.000000, 0.000000, 23.520000, 23.520000, 19.120000, 0.000000, 19.120000, 23.520000, 0.000000, 0.000000, 0.000000, 23.000, 0.000000, 0.000000, 0.000000, 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2023-11-30 17:50:37', '2023-11-30 17:50:37', ''),
+(7, 'AKPUMNGFI', 1, 1, 1, 1, 3, 7, 1, 7, 7, 10, '50b40d9583c95f6477c83442b0c88665', 'Płatności elektroniczne', 1.000000, 'ps_wirepayment', 0, 0, '', 0, '', 0.000000, 0.000000, 0.000000, 35.330000, 35.330000, 28.720000, 0.000000, 28.720000, 35.330000, 0.000000, 0.000000, 0.000000, 23.000, 0.000000, 0.000000, 0.000000, 2, 2, 0, 0, '0000-00-00 00:00:00', '0000-00-00 00:00:00', 0, '2023-11-30 17:57:52', '2023-11-30 17:57:52', '');
 
 -- --------------------------------------------------------
 
@@ -8704,7 +8809,9 @@ INSERT INTO `ps_order_carrier` (`id_order_carrier`, `id_order`, `id_carrier`, `i
 (2, 2, 2, 0, 0.000000, 7.000000, 8.400000, '', '2023-11-30 17:31:02'),
 (3, 3, 2, 0, 0.000000, 7.000000, 8.400000, '', '2023-11-30 17:31:02'),
 (4, 4, 2, 0, 0.000000, 7.000000, 8.400000, '', '2023-11-30 17:31:02'),
-(5, 5, 2, 0, 0.000000, 7.000000, 8.400000, '', '2023-11-30 17:31:02');
+(5, 5, 2, 0, 0.000000, 7.000000, 8.400000, '', '2023-11-30 17:31:02'),
+(6, 6, 1, 0, 0.300000, 0.000000, 0.000000, '', '2023-11-30 17:50:37'),
+(7, 7, 1, 0, 0.300000, 0.000000, 0.000000, '', '2023-11-30 17:57:52');
 
 -- --------------------------------------------------------
 
@@ -8793,7 +8900,9 @@ INSERT INTO `ps_order_detail` (`id_order_detail`, `id_order`, `id_order_invoice`
 (4, 2, 0, 0, 1, 8, 0, 0, 'Mug Today is a good day', 1, 1, 0, 0, 0, 11.900000, 0.00, 0.000000, 0.000000, 0.000000, 0.00, 0.000000, '', '', '', '', 'demo_13', '', 0.000000, 0, 0, '', 0.000, 0.000000, 0.000, 0, '', 0, '0000-00-00 00:00:00', 11.900000, 11.900000, 11.900000, 11.900000, 0.000000, 0.000000, 0.000000, 11.900000, 0.000000, 0.000000, 0.000000),
 (5, 3, 0, 0, 1, 16, 28, 0, 'Mountain fox notebook Style : Ruled', 1, 1, 0, 0, 0, 12.900000, 0.00, 0.000000, 0.000000, 0.000000, 0.00, 0.000000, '', '', '', '', 'demo_8', '', 0.000000, 0, 0, '', 0.000, 0.000000, 0.000, 0, '', 0, '0000-00-00 00:00:00', 12.900000, 12.900000, 12.900000, 12.900000, 0.000000, 0.000000, 0.000000, 12.900000, 0.000000, 0.000000, 0.000000),
 (6, 4, 0, 0, 1, 16, 29, 0, 'Mountain fox notebook Style : Plain', 1, 1, 0, 0, 0, 12.900000, 0.00, 0.000000, 0.000000, 0.000000, 0.00, 0.000000, '', '', '', '', 'demo_8', '', 0.000000, 0, 0, '', 0.000, 0.000000, 0.000, 0, '', 0, '0000-00-00 00:00:00', 12.900000, 12.900000, 12.900000, 12.900000, 0.000000, 0.000000, 0.000000, 12.900000, 0.000000, 0.000000, 0.000000),
-(7, 5, 0, 0, 1, 10, 25, 0, 'Brown bear cushion Color : Black', 1, 1, 0, 0, 0, 18.900000, 0.00, 0.000000, 0.000000, 0.000000, 0.00, 0.000000, '', '', '', '', 'demo_16', '', 0.000000, 0, 0, '', 0.000, 0.000000, 0.000, 0, '', 0, '0000-00-00 00:00:00', 18.900000, 18.900000, 18.900000, 18.900000, 0.000000, 0.000000, 0.000000, 18.900000, 0.000000, 0.000000, 0.000000);
+(7, 5, 0, 0, 1, 10, 25, 0, 'Brown bear cushion Color : Black', 1, 1, 0, 0, 0, 18.900000, 0.00, 0.000000, 0.000000, 0.000000, 0.00, 0.000000, '', '', '', '', 'demo_16', '', 0.000000, 0, 0, '', 0.000, 0.000000, 0.000, 0, '', 0, '0000-00-00 00:00:00', 18.900000, 18.900000, 18.900000, 18.900000, 0.000000, 0.000000, 0.000000, 18.900000, 0.000000, 0.000000, 0.000000),
+(8, 6, 0, 0, 1, 1, 6, 0, 'Hummingbird printed t-shirt (Rozmiar: L - Kolor: czarny)', 1, 1, 0, 0, 0, 19.120000, 20.00, 0.000000, 0.000000, 0.000000, 0.00, 24.750000, '', '', '', '', 'demo_1', 'demo_1_51', 0.300000, 1, 0, 'PTU PL 23%', 23.000, 0.000000, 0.000, 0, '', 0, '0000-00-00 00:00:00', 23.520000, 19.120000, 23.517600, 19.120000, 0.000000, 0.000000, 5.490000, 23.900000, 0.000000, 0.000000, 0.000000),
+(9, 7, 0, 0, 1, 2, 9, 0, 'Hummingbird printed sweater (Rozmiar: S)', 1, 1, 0, 0, 0, 28.720000, 20.00, 0.000000, 0.000000, 0.000000, 0.00, 36.560000, '', '', '', '', 'demo_3', 'demo_3_62', 0.300000, 1, 0, 'PTU PL 23%', 23.000, 0.000000, 0.000, 0, '', 0, '0000-00-00 00:00:00', 35.330000, 28.720000, 35.325600, 28.720000, 0.000000, 0.000000, 5.490000, 35.900000, 0.000000, 0.000000, 0.000000);
 
 -- --------------------------------------------------------
 
@@ -8807,6 +8916,14 @@ CREATE TABLE `ps_order_detail_tax` (
   `unit_amount` decimal(16,6) NOT NULL DEFAULT '0.000000',
   `total_amount` decimal(16,6) NOT NULL DEFAULT '0.000000'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Dumping data for table `ps_order_detail_tax`
+--
+
+INSERT INTO `ps_order_detail_tax` (`id_order_detail`, `id_tax`, `unit_amount`, `total_amount`) VALUES
+(8, 1, 4.397600, 4.400000),
+(9, 1, 6.605600, 6.610000);
 
 -- --------------------------------------------------------
 
@@ -8833,7 +8950,9 @@ INSERT INTO `ps_order_history` (`id_order_history`, `id_employee`, `id_order`, `
 (4, 0, 4, 1, '2023-11-30 17:31:02'),
 (5, 0, 5, 10, '2023-11-30 17:31:02'),
 (6, 1, 1, 6, '2023-11-30 17:31:02'),
-(7, 1, 3, 8, '2023-11-30 17:31:02');
+(7, 1, 3, 8, '2023-11-30 17:31:02'),
+(8, 0, 6, 10, '2023-11-30 17:50:37'),
+(9, 0, 7, 10, '2023-11-30 17:57:52');
 
 -- --------------------------------------------------------
 
@@ -10147,6 +10266,13 @@ CREATE TABLE `ps_psgdpr_log` (
   `date_add` datetime NOT NULL,
   `date_upd` datetime NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ps_psgdpr_log`
+--
+
+INSERT INTO `ps_psgdpr_log` (`id_gdpr_log`, `id_customer`, `id_guest`, `client_name`, `id_module`, `request_type`, `date_add`, `date_upd`) VALUES
+(1, 3, 0, 'Marcel Zieliński', 0, 1, '2023-11-30 17:46:07', '2023-11-30 17:46:07');
 
 -- --------------------------------------------------------
 
@@ -12029,8 +12155,8 @@ CREATE TABLE `ps_stock_available` (
 --
 
 INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_product_attribute`, `id_shop`, `id_shop_group`, `quantity`, `physical_quantity`, `reserved_quantity`, `depends_on_stock`, `out_of_stock`, `location`) VALUES
-(1, 1, 0, 1, 0, 2400, 0, 0, 0, 2, ''),
-(2, 2, 0, 1, 0, 2100, 0, 0, 0, 2, ''),
+(1, 1, 0, 1, 0, 2399, 2399, 0, 0, 2, ''),
+(2, 2, 0, 1, 0, 2099, 2099, 0, 0, 2, ''),
 (3, 3, 0, 1, 0, 1500, 0, 0, 0, 2, ''),
 (4, 4, 0, 1, 0, 1500, 0, 0, 0, 2, ''),
 (5, 5, 0, 1, 0, 900, 0, 0, 0, 2, ''),
@@ -12048,18 +12174,18 @@ INSERT INTO `ps_stock_available` (`id_stock_available`, `id_product`, `id_produc
 (17, 17, 0, 1, 0, 1200, 0, 0, 0, 2, ''),
 (18, 18, 0, 1, 0, 1200, 0, 0, 0, 2, ''),
 (19, 19, 0, 1, 0, 300, 0, 0, 0, 2, ''),
-(20, 1, 1, 1, 0, 300, 0, 0, 0, 2, ''),
-(21, 1, 2, 1, 0, 300, 0, 0, 0, 2, ''),
-(22, 1, 3, 1, 0, 300, 0, 0, 0, 2, ''),
-(23, 1, 4, 1, 0, 300, 0, 0, 0, 2, ''),
-(24, 1, 5, 1, 0, 300, 0, 0, 0, 2, ''),
-(25, 1, 6, 1, 0, 300, 0, 0, 0, 2, ''),
-(26, 1, 7, 1, 0, 300, 0, 0, 0, 2, ''),
-(27, 1, 8, 1, 0, 300, 0, 0, 0, 2, ''),
-(28, 2, 9, 1, 0, 1200, 0, 0, 0, 2, ''),
-(29, 2, 10, 1, 0, 300, 0, 0, 0, 2, ''),
-(30, 2, 11, 1, 0, 300, 0, 0, 0, 2, ''),
-(31, 2, 12, 1, 0, 300, 0, 0, 0, 2, ''),
+(20, 1, 1, 1, 0, 300, 300, 0, 0, 2, ''),
+(21, 1, 2, 1, 0, 300, 300, 0, 0, 2, ''),
+(22, 1, 3, 1, 0, 300, 300, 0, 0, 2, ''),
+(23, 1, 4, 1, 0, 300, 300, 0, 0, 2, ''),
+(24, 1, 5, 1, 0, 300, 300, 0, 0, 2, ''),
+(25, 1, 6, 1, 0, 299, 300, 1, 0, 2, ''),
+(26, 1, 7, 1, 0, 300, 300, 0, 0, 2, ''),
+(27, 1, 8, 1, 0, 300, 300, 0, 0, 2, ''),
+(28, 2, 9, 1, 0, 1199, 1200, 1, 0, 2, ''),
+(29, 2, 10, 1, 0, 300, 300, 0, 0, 2, ''),
+(30, 2, 11, 1, 0, 300, 300, 0, 0, 2, ''),
+(31, 2, 12, 1, 0, 300, 300, 0, 0, 2, ''),
 (32, 3, 13, 1, 0, 900, 0, 0, 0, 2, ''),
 (33, 3, 14, 1, 0, 300, 0, 0, 0, 2, ''),
 (34, 3, 15, 1, 0, 300, 0, 0, 0, 2, ''),
@@ -13885,6 +14011,13 @@ CREATE TABLE `ps_wishlist` (
   `date_upd` datetime NOT NULL,
   `default` int(10) UNSIGNED DEFAULT '0'
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Dumping data for table `ps_wishlist`
+--
+
+INSERT INTO `ps_wishlist` (`id_wishlist`, `id_customer`, `id_shop`, `id_shop_group`, `token`, `name`, `counter`, `date_add`, `date_upd`, `default`) VALUES
+(1, 3, 1, 1, 'F92373BEF5C720F0', 'My wishlist', NULL, '2023-11-30 17:46:07', '2023-11-30 17:46:07', 1);
 
 -- --------------------------------------------------------
 
@@ -15940,7 +16073,7 @@ ALTER TABLE `ps_zone_shop`
 -- AUTO_INCREMENT for table `ps_address`
 --
 ALTER TABLE `ps_address`
-  MODIFY `id_address` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=7;
+  MODIFY `id_address` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `ps_admin_filter`
@@ -16006,7 +16139,7 @@ ALTER TABLE `ps_carrier`
 -- AUTO_INCREMENT for table `ps_cart`
 --
 ALTER TABLE `ps_cart`
-  MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_cart` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `ps_cart_rule`
@@ -16060,7 +16193,7 @@ ALTER TABLE `ps_cms_role`
 -- AUTO_INCREMENT for table `ps_configuration`
 --
 ALTER TABLE `ps_configuration`
-  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=425;
+  MODIFY `id_configuration` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=431;
 
 --
 -- AUTO_INCREMENT for table `ps_configuration_kpi`
@@ -16072,13 +16205,13 @@ ALTER TABLE `ps_configuration_kpi`
 -- AUTO_INCREMENT for table `ps_connections`
 --
 ALTER TABLE `ps_connections`
-  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_connections` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `ps_connections_source`
 --
 ALTER TABLE `ps_connections_source`
-  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_connections_source` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=26;
 
 --
 -- AUTO_INCREMENT for table `ps_contact`
@@ -16102,25 +16235,25 @@ ALTER TABLE `ps_currency`
 -- AUTO_INCREMENT for table `ps_customer`
 --
 ALTER TABLE `ps_customer`
-  MODIFY `id_customer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_customer` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `ps_customer_message`
 --
 ALTER TABLE `ps_customer_message`
-  MODIFY `id_customer_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_customer_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_customer_session`
 --
 ALTER TABLE `ps_customer_session`
-  MODIFY `id_customer_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_customer_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_customer_thread`
 --
 ALTER TABLE `ps_customer_thread`
-  MODIFY `id_customer_thread` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_customer_thread` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_customization`
@@ -16162,7 +16295,7 @@ ALTER TABLE `ps_employee`
 -- AUTO_INCREMENT for table `ps_employee_session`
 --
 ALTER TABLE `ps_employee_session`
-  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_employee_session` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_feature`
@@ -16204,7 +16337,7 @@ ALTER TABLE `ps_group_reduction`
 -- AUTO_INCREMENT for table `ps_guest`
 --
 ALTER TABLE `ps_guest`
-  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
+  MODIFY `id_guest` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
 
 --
 -- AUTO_INCREMENT for table `ps_homeslider`
@@ -16300,13 +16433,13 @@ ALTER TABLE `ps_link_block_shop`
 -- AUTO_INCREMENT for table `ps_log`
 --
 ALTER TABLE `ps_log`
-  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=228;
+  MODIFY `id_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=231;
 
 --
 -- AUTO_INCREMENT for table `ps_mail`
 --
 ALTER TABLE `ps_mail`
-  MODIFY `id_mail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_mail` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 
 --
 -- AUTO_INCREMENT for table `ps_manufacturer`
@@ -16324,7 +16457,7 @@ ALTER TABLE `ps_memcached_servers`
 -- AUTO_INCREMENT for table `ps_message`
 --
 ALTER TABLE `ps_message`
-  MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_message` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_meta`
@@ -16342,7 +16475,7 @@ ALTER TABLE `ps_module`
 -- AUTO_INCREMENT for table `ps_module_history`
 --
 ALTER TABLE `ps_module_history`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 
 --
 -- AUTO_INCREMENT for table `ps_module_preference`
@@ -16360,13 +16493,13 @@ ALTER TABLE `ps_operating_system`
 -- AUTO_INCREMENT for table `ps_orders`
 --
 ALTER TABLE `ps_orders`
-  MODIFY `id_order` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_order` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `ps_order_carrier`
 --
 ALTER TABLE `ps_order_carrier`
-  MODIFY `id_order_carrier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
+  MODIFY `id_order_carrier` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT for table `ps_order_cart_rule`
@@ -16378,13 +16511,13 @@ ALTER TABLE `ps_order_cart_rule`
 -- AUTO_INCREMENT for table `ps_order_detail`
 --
 ALTER TABLE `ps_order_detail`
-  MODIFY `id_order_detail` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_order_detail` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `ps_order_history`
 --
 ALTER TABLE `ps_order_history`
-  MODIFY `id_order_history` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
+  MODIFY `id_order_history` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=10;
 
 --
 -- AUTO_INCREMENT for table `ps_order_invoice`
@@ -16516,7 +16649,7 @@ ALTER TABLE `ps_psgdpr_consent_lang`
 -- AUTO_INCREMENT for table `ps_psgdpr_log`
 --
 ALTER TABLE `ps_psgdpr_log`
-  MODIFY `id_gdpr_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_gdpr_log` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_psreassurance`
@@ -16582,7 +16715,7 @@ ALTER TABLE `ps_search_engine`
 -- AUTO_INCREMENT for table `ps_search_word`
 --
 ALTER TABLE `ps_search_word`
-  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=666;
+  MODIFY `id_word` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=656;
 
 --
 -- AUTO_INCREMENT for table `ps_shop`
@@ -16792,7 +16925,7 @@ ALTER TABLE `ps_web_browser`
 -- AUTO_INCREMENT for table `ps_wishlist`
 --
 ALTER TABLE `ps_wishlist`
-  MODIFY `id_wishlist` int(10) UNSIGNED NOT NULL AUTO_INCREMENT;
+  MODIFY `id_wishlist` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `ps_wishlist_product`
