@@ -1,0 +1,31 @@
+services:
+    PhpDocAnalyzer:
+        class: PHPStanForPrestaShop\PhpDoc\PhpDocAnalyzer
+
+    UseStrictTypesForNewClassesRule:
+        class: PHPStanForPrestaShop\Rules\UseStrictTypesForNewClassesRule
+        arguments:
+            configurationFileLoader: @strictTypesForNewClassesRuleConfigurationFileLoader
+        tags:
+            - phpstan.rules.rule
+
+    ClassConstantsMustHaveVisibilityRule:
+        class: PHPStanForPrestaShop\Rules\ClassConstantsMustHaveVisibilityRule
+        tags:
+            - phpstan.rules.rule
+
+    UseTypedReturnForNewMethodsRule:
+        class: PHPStanForPrestaShop\Rules\UseTypedReturnForNewMethodsRule
+        arguments:
+            configurationFileLoader: @returnTypesForNewMethodsRuleConfigurationFileLoader
+            phpDocAnalyzer: @PhpDocAnalyzer
+        tags:
+            - phpstan.rules.rule
+
+    UseTypeHintForNewMethodsRule:
+        class: PHPStanForPrestaShop\Rules\UseTypeHintForNewMethodsRule
+        arguments:
+            configurationFileLoader: @typeHintsForNewMethodsRuleConfigurationFileLoader
+            phpDocAnalyzer: @PhpDocAnalyzer
+        tags:
+            - phpstan.rules.rule
