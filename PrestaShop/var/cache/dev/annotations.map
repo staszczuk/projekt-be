@@ -12,4 +12,9 @@
   10 => 'PrestaShop\\Module\\Ps_metrics\\Controller\\Admin\\MetricsLegacyStatsController',
   11 => 'PrestaShop\\Module\\Ps_metrics\\Controller\\Admin\\MetricsOauthController',
   12 => 'PrestaShop\\Module\\Ps_metrics\\Controller\\Admin\\MetricsResolverController',
+  13 => 'PrestaShop\\Module\\PsAccounts\\Controller\\AbstractRestChildController',
+  14 => 'PrestaShop\\Module\\PsAccounts\\Controller\\AbstractRestController',
+  15 => 'PrestaShop\\Module\\PsAccounts\\Controller\\AbstractShopRestController',
+  16 => 'PrestaShop\\Module\\PsAccounts\\Controller\\RestControllerInterface',
+  17 => 'PrestaShop\\Module\\PsEventbus\\Controller\\AbstractApiController',
 );
