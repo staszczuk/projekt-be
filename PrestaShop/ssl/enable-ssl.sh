@@ -1,8 +1,6 @@
 #!/bin/bash
-cd /var/www/html
-mkdir ssl
-chmod 777 ssl
-cd ssl
+
+apt install -y expect
 
 expect -c '
 spawn openssl genrsa -des3 -out server.key 2048
@@ -12,7 +10,6 @@ expect "Verifying - Enter pass phrase for server.key:"
 send "1111\n"
 expect eof
 '
-echo "koniec"
 
 expect -c '
 spawn openssl req -new -key server.key -out server.csr
@@ -60,15 +57,22 @@ expect eof
 '
 
 cp server.key server.key.org;
+
 expect -c '
 spawn openssl rsa -in server.key.org -out server.key
 expect "Enter pass phrase for server.key.org:"
 send "1111\n"
 expect eof
 '
+
 openssl x509 -req -days 365 -in server.csr -signkey server.key -out server.crt
 
-cp server.crt server.csr server.key server.key.org /etc/apache2/ssl/
+mkdir /etc/apache2/ssl
+
+cp server.crt server.csr server.key server.key.org /etc/apache2/ssl
+
+rm server.crt server.csr server.key server.key.org
+
 cp -r 000-default.conf /etc/apache2/sites-enabled
 
 a2enmod ssl;service apache2 restart
