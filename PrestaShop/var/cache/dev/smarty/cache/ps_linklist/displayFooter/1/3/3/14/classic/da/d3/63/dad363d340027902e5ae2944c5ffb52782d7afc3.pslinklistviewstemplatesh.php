@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-01 20:59:16
+/* Smarty version 3.1.48, created on 2023-12-01 21:22:46
   from 'module:pslinklistviewstemplatesh' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656a3b142035e5_75857125',
+  'unifunc' => 'content_656a40964d87e7_37017974',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -18,13 +18,13 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_656a3b142035e5_75857125 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656a40964d87e7_37017974 (Smarty_Internal_Template $_smarty_tpl) {
 $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
   'renderLogo' => 
   array (
     'compiled_filepath' => '/var/www/html/var/cache/dev/smarty/compile/classiclayouts_layout_full_width_tpl/d2/2d/85/d22d851f6d7c12eb35c1c34c8e84baa801a8cea2_2.file.helpers.tpl.php',
     'uid' => 'd22d851f6d7c12eb35c1c34c8e84baa801a8cea2',
-    'call_name' => 'smarty_template_function_renderLogo_732376235656a385ccccdd2_95556439',
+    'call_name' => 'smarty_template_function_renderLogo_851577878656a408e5d0623_22101968',
   ),
 ));
 ?><!-- begin /var/www/html/themes/classic/modules/ps_linklist/views/templates/hook/linkblock.tpl --><div class="col-md-6 links">
@@ -100,9 +100,9 @@ $_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, arra
                 id="link-cms-page-4-2"
                 class="cms-page-link"
                 href="https://localhost:8443/index.php?id_cms=4&amp;controller=cms"
-                title="Learn more about us"
+                title="onas"
                             >
-              About us
+              O nas
             </a>
           </li>
                   <li>

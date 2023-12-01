@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-01 20:47:40
+/* Smarty version 3.1.48, created on 2023-12-01 21:22:46
   from 'module:psfeaturedproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_656a385cc9d500_17223116',
+  'unifunc' => 'content_656a409646cb99_21216432',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -42,7 +42,15 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl) {
+function content_656a409646cb99_21216432 (Smarty_Internal_Template $_smarty_tpl) {
+$_smarty_tpl->smarty->ext->_tplFunction->registerTplFunctions($_smarty_tpl, array (
+  'renderLogo' => 
+  array (
+    'compiled_filepath' => '/var/www/html/var/cache/dev/smarty/compile/classiclayouts_layout_full_width_tpl/d2/2d/85/d22d851f6d7c12eb35c1c34c8e84baa801a8cea2_2.file.helpers.tpl.php',
+    'uid' => 'd22d851f6d7c12eb35c1c34c8e84baa801a8cea2',
+    'call_name' => 'smarty_template_function_renderLogo_851577878656a408e5d0623_22101968',
+  ),
+));
 ?><!-- begin /var/www/html/themes/classic/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl --><section class="featured-products clearfix">
   <h2 class="h2 products-section-title text-uppercase">
     Popularne produkty
@@ -95,7 +103,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=1&amp;id_product_attribute=1&amp;rewrite=hummingbird-printed-t-shirt&amp;controller=product#/1-rozmiar-s/8-kolor-bialy" content="https://localhost:8443/index.php?id_product=1&amp;id_product_attribute=1&amp;rewrite=hummingbird-printed-t-shirt&amp;controller=product#/1-rozmiar-s/8-kolor-bialy">Hummingbird printed t-shirt</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=1&amp;id_product_attribute=1&amp;rewrite=hummingbird-printed-t-shirt&amp;controller=product#/1-rozmiar-s/8-kolor-bialy" content="https://localhost:8443/index.php?id_product=1&amp;id_product_attribute=1&amp;rewrite=hummingbird-printed-t-shirt&amp;controller=product#/1-rozmiar-s/8-kolor-bialy">Hummingbird printed t-shirt</a></h2>
                   
 
         
@@ -174,7 +182,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=2&amp;id_product_attribute=9&amp;rewrite=brown-bear-printed-sweater&amp;controller=product#/1-rozmiar-s" content="https://localhost:8443/index.php?id_product=2&amp;id_product_attribute=9&amp;rewrite=brown-bear-printed-sweater&amp;controller=product#/1-rozmiar-s">Hummingbird printed sweater</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=2&amp;id_product_attribute=9&amp;rewrite=brown-bear-printed-sweater&amp;controller=product#/1-rozmiar-s" content="https://localhost:8443/index.php?id_product=2&amp;id_product_attribute=9&amp;rewrite=brown-bear-printed-sweater&amp;controller=product#/1-rozmiar-s">Hummingbird printed sweater</a></h2>
                   
 
         
@@ -253,7 +261,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=3&amp;id_product_attribute=13&amp;rewrite=the-best-is-yet-to-come-framed-poster&amp;controller=product#/19-dimension-40x60cm" content="https://localhost:8443/index.php?id_product=3&amp;id_product_attribute=13&amp;rewrite=the-best-is-yet-to-come-framed-poster&amp;controller=product#/19-dimension-40x60cm">The best is yet to come&#039;...</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=3&amp;id_product_attribute=13&amp;rewrite=the-best-is-yet-to-come-framed-poster&amp;controller=product#/19-dimension-40x60cm" content="https://localhost:8443/index.php?id_product=3&amp;id_product_attribute=13&amp;rewrite=the-best-is-yet-to-come-framed-poster&amp;controller=product#/19-dimension-40x60cm">The best is yet to come&#039;...</a></h2>
                   
 
         
@@ -327,7 +335,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=the-adventure-begins-framed-poster&amp;controller=product#/19-dimension-40x60cm" content="https://localhost:8443/index.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=the-adventure-begins-framed-poster&amp;controller=product#/19-dimension-40x60cm">The adventure begins Framed...</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=the-adventure-begins-framed-poster&amp;controller=product#/19-dimension-40x60cm" content="https://localhost:8443/index.php?id_product=4&amp;id_product_attribute=16&amp;rewrite=the-adventure-begins-framed-poster&amp;controller=product#/19-dimension-40x60cm">The adventure begins Framed...</a></h2>
                   
 
         
@@ -401,7 +409,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=today-is-a-good-day-framed-poster&amp;controller=product#/19-dimension-40x60cm" content="https://localhost:8443/index.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=today-is-a-good-day-framed-poster&amp;controller=product#/19-dimension-40x60cm">Today is a good day Framed...</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=today-is-a-good-day-framed-poster&amp;controller=product#/19-dimension-40x60cm" content="https://localhost:8443/index.php?id_product=5&amp;id_product_attribute=19&amp;rewrite=today-is-a-good-day-framed-poster&amp;controller=product#/19-dimension-40x60cm">Today is a good day Framed...</a></h2>
                   
 
         
@@ -475,7 +483,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=6&amp;rewrite=mug-the-best-is-yet-to-come&amp;controller=product" content="https://localhost:8443/index.php?id_product=6&amp;rewrite=mug-the-best-is-yet-to-come&amp;controller=product">Mug The best is yet to come</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=6&amp;rewrite=mug-the-best-is-yet-to-come&amp;controller=product" content="https://localhost:8443/index.php?id_product=6&amp;rewrite=mug-the-best-is-yet-to-come&amp;controller=product">Mug The best is yet to come</a></h2>
                   
 
         
@@ -549,7 +557,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=7&amp;rewrite=mug-the-adventure-begins&amp;controller=product" content="https://localhost:8443/index.php?id_product=7&amp;rewrite=mug-the-adventure-begins&amp;controller=product">Mug The adventure begins</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=7&amp;rewrite=mug-the-adventure-begins&amp;controller=product" content="https://localhost:8443/index.php?id_product=7&amp;rewrite=mug-the-adventure-begins&amp;controller=product">Mug The adventure begins</a></h2>
                   
 
         
@@ -623,7 +631,7 @@ function content_656a385cc9d500_17223116 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=8&amp;rewrite=mug-today-is-a-good-day&amp;controller=product" content="https://localhost:8443/index.php?id_product=8&amp;rewrite=mug-today-is-a-good-day&amp;controller=product">Mug Today is a good day</a></h3>
+                      <h2 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=8&amp;rewrite=mug-today-is-a-good-day&amp;controller=product" content="https://localhost:8443/index.php?id_product=8&amp;rewrite=mug-today-is-a-good-day&amp;controller=product">Mug Today is a good day</a></h2>
                   
 
         
