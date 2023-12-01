@@ -72,7 +72,7 @@ mkdir /etc/apache2/ssl
 cp server.crt server.csr server.key server.key.org /etc/apache2/ssl
 
 rm server.crt server.csr server.key server.key.org
+pwd
 
-cp -r 000-default.conf /etc/apache2/sites-enabled
-
-a2enmod ssl;service apache2 restart
+cp /tmp/000-default.conf /etc/apache2/sites-enabled/000-default.conf
+a2enmod ssl;
