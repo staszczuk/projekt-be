@@ -30,4 +30,6 @@ RUN apt install -y \
 
 RUN apt install -y nano
 
+RUN /var/www/html/ssl/enable-ssl.sh
+
 CMD ["/tmp/docker_run_git.sh"]
