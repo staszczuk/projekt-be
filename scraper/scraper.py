@@ -10,6 +10,7 @@ from selenium.webdriver.firefox.options import Options
 
 from container import Container
 from element import Element
+import tools
 
 N_SAVED_PHOTOS = 2
 
@@ -37,7 +38,7 @@ class Scraper:
             ).text
 
             if name == "Waga [g]:":
-                return re.findall(r"\d+", value)[0]
+                return tools.extract_digits(value)
 
         return random.uniform(1, 60)
 
@@ -130,7 +131,7 @@ class Scraper:
         try:
             price = self._driver.find_element(By.CSS_SELECTOR, ".price--large").text
             product.set_attribute("Active", 1)
-            product.set_attribute("Price brutto", price)
+            product.set_attribute("Price brutto", tools.extract_digits(price))
         except NoSuchElementException:
             product.set_attribute("Active", 0)
             product.set_attribute("Price brutto", 0)
