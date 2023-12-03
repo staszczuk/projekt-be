@@ -1,0 +1,109 @@
+id|Active|Name|Parent category|Root category|Description
+0|1|Aparaty cyfrowe|Home|0|TODO
+1|1|Używane aparaty cyfrowe|Home|0|TODO
+2|1|Akcesoria drobne|Home|0|TODO
+3|1|Akcesoria podwodne|Home|0|TODO
+4|1|Akumulatory|Home|0|TODO
+5|1|Dyski twarde|Home|0|TODO
+6|1|Czytniki|Home|0|TODO
+7|1|Filtry prostokątne|Home|0|TODO
+8|1|Filtry, pokrywki|Home|0|TODO
+9|1|Fotografowanie przyrody|Home|0|TODO
+10|1|Gadżety|Home|0|TODO
+11|1|Gwarancja|Home|0|TODO
+12|1|Kable|Home|0|TODO
+13|1|Kalibratory kolorów|Home|0|TODO
+14|1|Karty pamięci|Home|0|TODO
+15|1|Karty podarunkowe|Home|0|TODO
+16|1|Konwertery|Home|0|TODO
+17|1|Lampy błyskowe|Home|0|TODO
+18|1|Literatura|Home|0|TODO
+19|1|Ładowarki|Home|0|TODO
+20|1|Materiały natychmiastowe|Home|0|TODO
+21|1|Obiektywy do lustrzanek|Home|0|TODO
+22|1|Obiektywy do bezlusterkowców|Home|0|TODO
+23|1|Oprogramowanie|Home|0|TODO
+24|1|Pamięci USB|Home|0|TODO
+25|1|Papier fotograficzny|Home|0|TODO
+26|1|Ramki cyfrowe|Home|0|TODO
+27|1|Statywy i akcesoria|Home|0|TODO
+28|1|Pomiar światła|Home|0|TODO
+29|1|Torby, plecaki, walizki|Home|0|TODO
+30|1|Tulejki, pierścienie|Home|0|TODO
+31|1|Zasilacze|Home|0|TODO
+32|1|Kursy i szkolenia|Home|0|TODO
+33|1|kompakty|Aparaty cyfrowe|0|TODO
+34|1|kompakty z natychmiastowym wydrukiem|Aparaty cyfrowe|0|TODO
+35|1|bezlusterkowce|Aparaty cyfrowe|0|TODO
+36|1|lustrzanki|Aparaty cyfrowe|0|TODO
+219|1|aparaty cyfrowe|Używane aparaty cyfrowe|0|TODO
+240|1|adaptery do lunet|Akcesoria drobne|0|TODO
+241|1|adaptery WiFi i Bluetooth|Akcesoria drobne|0|TODO
+242|1|akces. czyszczące|Akcesoria drobne|0|TODO
+243|1|akcesoria do obiektywów|Akcesoria drobne|0|TODO
+244|1|akcesoria do wizjera|Akcesoria drobne|0|TODO
+245|1|akcesoria GPS|Akcesoria drobne|0|TODO
+246|1|matówki|Akcesoria drobne|0|TODO
+247|1|osłony na LCD|Akcesoria drobne|0|TODO
+248|1|osłony przeciwsłoneczne|Akcesoria drobne|0|TODO
+249|1|paski|Akcesoria drobne|0|TODO
+250|1|piloty / wężyki|Akcesoria drobne|0|TODO
+251|1|wizjery do filmowania|Akcesoria drobne|0|TODO
+252|1|poziomice|Akcesoria drobne|0|TODO
+253|1|uchwyty|Akcesoria drobne|0|TODO
+254|1|szyny i listwy|Akcesoria drobne|0|TODO
+255|1|adaptery|Akcesoria drobne|0|TODO
+256|1|przyciski spustu migawki|Akcesoria drobne|0|TODO
+511|1|akcesoria|Akcesoria podwodne|0|TODO
+512|1|obudowy podwodne do aparatów|Akcesoria podwodne|0|TODO
+513|1|dekielki do obudowy podwodnej|Akcesoria podwodne|0|TODO
+514|1|obudowy do kamer|Akcesoria podwodne|0|TODO
+515|1|oświetlenie podwodne|Akcesoria podwodne|0|TODO
+516|1|akcesoria czyszczące|Akcesoria podwodne|0|TODO
+517|1|kable i adaptery|Akcesoria podwodne|0|TODO
+518|1|monitory i osłony|Akcesoria podwodne|0|TODO
+519|1|ringi, pierścienie, uszczelki|Akcesoria podwodne|0|TODO
+520|1|uchwyty, ramiona, konektory|Akcesoria podwodne|0|TODO
+580|1|akumulatory AA / AAA|Akumulatory|0|TODO
+581|1|baterie AA / AAA|Akumulatory|0|TODO
+582|1|baterie specjalistyczne|Akumulatory|0|TODO
+583|1|battery gripy|Akumulatory|0|TODO
+584|1|do Canon|Akumulatory|0|TODO
+585|1|do FujiFilm|Akumulatory|0|TODO
+586|1|do Leica|Akumulatory|0|TODO
+587|1|do Nikon|Akumulatory|0|TODO
+588|1|do Olympus|Akumulatory|0|TODO
+589|1|do Panasonic|Akumulatory|0|TODO
+590|1|do Pentax|Akumulatory|0|TODO
+591|1|do Ricoh|Akumulatory|0|TODO
+592|1|do Samsung|Akumulatory|0|TODO
+593|1|do Sony|Akumulatory|0|TODO
+594|1|do Hasselblad|Akumulatory|0|TODO
+799|1|Dyski sieciowe|Dyski twarde|0|TODO
+800|1|dyski wewnętrzne SSD|Dyski twarde|0|TODO
+801|1|dyski wewnętrzne HDD|Dyski twarde|0|TODO
+802|1|dyski zewnętrzne HDD|Dyski twarde|0|TODO
+803|1|dyski zewnętrzne SSD|Dyski twarde|0|TODO
+896|1|SD / SDHC|Czytniki|0|TODO
+897|1|uniwersalne|Czytniki|0|TODO
+898|1|CFast|Czytniki|0|TODO
+899|1|XQD|Czytniki|0|TODO
+900|1|CFexpress Type B|Czytniki|0|TODO
+925|1|adaptery i uchwyty|Filtry prostokątne|0|TODO
+926|1|akcesoria drobne|Filtry prostokątne|0|TODO
+927|1|efektowe, konwersyjne|Filtry prostokątne|0|TODO
+928|1|polaryzacyjne, UV|Filtry prostokątne|0|TODO
+929|1|połówkowe i szare|Filtry prostokątne|0|TODO
+930|1|specjalne|Filtry prostokątne|0|TODO
+931|1|zestawy|Filtry prostokątne|0|TODO
+1009|1|dekielki do balansu bieli|Filtry, pokrywki|0|TODO
+1010|1|efektowe, konwersyjne|Filtry, pokrywki|0|TODO
+1011|1|podczerwone|Filtry, pokrywki|0|TODO
+1012|1|pokrywki|Filtry, pokrywki|0|TODO
+1013|1|polaryzacyjne|Filtry, pokrywki|0|TODO
+1014|1|połówkowe i szare|Filtry, pokrywki|0|TODO
+1015|1|ochronne|Filtry, pokrywki|0|TODO
+1016|1|UV|Filtry, pokrywki|0|TODO
+1017|1|uchwyty na dekielki|Filtry, pokrywki|0|TODO
+1018|1|zestawy filtrów|Filtry, pokrywki|0|TODO
+1019|1|adaptery i redukcje|Filtry, pokrywki|0|TODO
