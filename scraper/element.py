@@ -6,6 +6,9 @@ class Element:
         self._attributes = {"id": Element.id}
         Element.id += 1
 
+    def add_attribute(self, name, value):
+        self._attributes.update({name: value})
+
     def get_attribute(self, name):
         return self._attributes.get(name)
 
@@ -17,6 +20,3 @@ class Element:
 
     def get_link(self):
         return self._link
-
-    def set_attribute(self, name, value):
-        self._attributes.update({name: value})
