@@ -83,14 +83,14 @@ class Scraper:
             name = element.find_element(By.CSS_SELECTOR, "span:nth-child(1)").text
 
             subcategory = Element(link)
-            category.set_attribute("Active", 1)
-            category.set_attribute("Name", name)
+            subcategory.set_attribute("Active", 1)
+            subcategory.set_attribute("Name", name)
 
             parent_category_name = category.get_attribute("Name")
-            category.set_attribute("Parent category", parent_category_name)
+            subcategory.set_attribute("Parent category", parent_category_name)
 
-            category.set_attribute("Root category", 0)
-            category.set_attribute("Description", "TODO")
+            subcategory.set_attribute("Root category", 0)
+            subcategory.set_attribute("Description", "TODO")
 
             subcategories.add_element(subcategory)
 
