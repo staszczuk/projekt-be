@@ -1,6 +1,8 @@
 import os
+import random
 import re
 
+from minify_html import minify
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -36,7 +38,14 @@ class Scraper:
             name = element.find_element(By.CSS_SELECTOR, "span:nth-child(1)").text
 
             category = Element(link)
-            category.add_attribute("name", name)
+            category.set_attribute("Name *", name)
+
+            # set other attributes
+
+            category.set_attribute("Parent category", "home")
+            category.set_attribute("Active (0/1)", 1)
+            category.set_attribute("Root category (0/1)", 0)
+            category.set_attribute("Description", "TODO")
 
             categories.add_element(category)
 
@@ -60,8 +69,16 @@ class Scraper:
             name = element.find_element(By.CSS_SELECTOR, "span:nth-child(1)").text
 
             subcategory = Element(link)
-            subcategory.add_attribute("name", name)
-            subcategory.add_attribute("category", category.get_attribute("name"))
+            subcategory.set_attribute("Name *", name)
+            subcategory.set_attribute(
+                "Parent category", category.get_attribute("Name *")
+            )
+
+            # set other attributes
+
+            subcategory.set_attribute("Active (0/1)", 1)
+            subcategory.set_attribute("Root category (0/1)", 0)
+            subcategory.set_attribute("Description", "TODO")
 
             subcategories.add_element(subcategory)
 
@@ -94,26 +111,40 @@ class Scraper:
         self._driver.get(product.get_link())
 
         name = self._driver.find_element(By.CSS_SELECTOR, "h1").text
-        product.add_attribute("name", name)
+        product.set_attribute("Name *", name)
 
-        product.add_attribute("category", subcategory.get_attribute("category"))
-        product.add_attribute("subcategory", subcategory.get_attribute("name"))
+        product.set_attribute(
+            "Categories (x,y,z...)",
+            f"{subcategory.get_attribute('Parent category')},{subcategory.get_attribute('Name *')}",
+        )
 
         try:
             price = self._driver.find_element(By.CSS_SELECTOR, ".price--large").text
-            product.add_attribute("available", "yes")
-            product.add_attribute("price", price)
+            product.set_attribute("brutto", price)
         except NoSuchElementException:
-            product.add_attribute("available", "no")
-            product.add_attribute("price", -1)
+            product.set_attribute("brutto", 0)
 
         try:
             old_price = self._driver.find_element(
                 By.CSS_SELECTOR, ".prices__price-old > div:nth-child(1)"
             ).text
-            product.add_attribute("old_price", old_price)
+            product.set_attribute("old_price", old_price)
         except NoSuchElementException:
-            product.add_attribute("old_price", -1)
+            product.set_attribute("old_price", -1)
+
+        # set other attributes
+
+        product.set_attribute("Active (0/1)", 1)
+        product.set_attribute("ID podatku", 1)
+
+        description = self._driver.find_element(
+            By.CSS_SELECTOR, ".product-description-content > article"
+        ).get_attribute("innerHTML")
+        product.set_attribute("dlugi opis", minify(description))
+        product.set_attribute("podsumowanie", "TODO")
+
+        product.set_attribute("weight", random.randrange(1, 60))
+        product.set_attribute("ilosc", random.randrange(1, 120))
 
         self.save_product_photos(product)
 
@@ -123,6 +154,7 @@ class Scraper:
         )
 
         links = [element.get_attribute("src") for element in elements]
+        paths_str = ""
 
         saved_photos = 0
         pattern = re.compile(".*\.[^\/]*$")
@@ -136,8 +168,11 @@ class Scraper:
 
             self._driver.get(link)
             path = os.path.join("photos", f"{product.get_attribute('id')}_{id}.png")
+            paths_str += f"{path},"
             self._driver.save_screenshot(path)
             saved_photos += 1
+
+        product.set_attribute("Image URLs (x,y,z...)", paths_str[:-1])
 
     def _stop(self):
         self._driver.quit()

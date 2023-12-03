@@ -32,7 +32,7 @@ class Container:
             Container.overridden.append(self._file_path)
 
         with open(self._file_path, "a", buffering=1) as file:
-            writer = csv.writer(file)
+            writer = csv.writer(file, delimiter=";")
 
             for element in self._elements:
                 writer.writerow(element.get_attribute_values())
