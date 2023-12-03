@@ -57,9 +57,8 @@ class Scraper:
             category = Element(link)
             category.set_attribute("Active", 1)
             category.set_attribute("Name", name)
-            category.set_attribute("Parent category", "Home")
+            category.set_attribute("Parent category", "Strona główna")
             category.set_attribute("Root category", 0)
-            category.set_attribute("Description", "TODO")
 
             categories.add_element(category)
 
@@ -90,7 +89,6 @@ class Scraper:
             subcategory.set_attribute("Parent category", parent_category_name)
 
             subcategory.set_attribute("Root category", 0)
-            subcategory.set_attribute("Description", "TODO")
 
             subcategories.add_element(subcategory)
 
