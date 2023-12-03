@@ -6,7 +6,7 @@ from element import Element
 
 
 class Container:
-    overridden = []
+    overridden_files = []
 
     def __init__(self, name):
         self._name = name
@@ -19,20 +19,22 @@ class Container:
     def get_elements(self):
         return self._elements
 
-    def write(self):
+    def write_attributes(self):
         if not self._elements:
             return
 
-        if self._file_path not in Container.overridden:
-            with open(self._file_path, "w", buffering=1) as file:
-                writer = csv.writer(file)
-                attribute_names = self._elements[0].get_attribute_names()
-                writer.writerow(attribute_names)
-
-            Container.overridden.append(self._file_path)
+        if self._file_path not in Container.overridden_files:
+            self._write_attribute_names()
+            Container.overridden_files.append(self._file_path)
 
         with open(self._file_path, "a", buffering=1) as file:
             writer = csv.writer(file)
 
             for element in self._elements:
                 writer.writerow(element.get_attribute_values())
+
+    def _write_attribute_names(self):
+        with open(self._file_path, "w", buffering=1) as file:
+            writer = csv.writer(file)
+            names = self._elements[0].get_attribute_names()
+            writer.writerow(names)

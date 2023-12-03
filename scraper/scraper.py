@@ -40,7 +40,7 @@ class Scraper:
 
             categories.add_element(category)
 
-        categories.write()
+        categories.write_attributes()
 
         for category in categories.get_elements():
             self._iterate_subcategories(category)
@@ -65,7 +65,7 @@ class Scraper:
 
             subcategories.add_element(subcategory)
 
-        subcategories.write()
+        subcategories.write_attributes()
 
         for subcategory in subcategories.get_elements():
             self._iterate_products(subcategory)
@@ -88,7 +88,7 @@ class Scraper:
         for product in products.get_elements():
             self._save_product_info(product, subcategory)
 
-        products.write()
+        products.write_attributes()
 
     def _save_product_info(self, product: Element, subcategory: Element):
         self._driver.get(product.get_link())
