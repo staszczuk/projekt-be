@@ -13,11 +13,11 @@ class Container:
         self._elements: List[Element] = []
         self._file_path = os.path.join("csv", name + ".csv")
 
+    def __iter__(self):
+        return iter(self._elements)
+
     def add_element(self, element):
         self._elements.append(element)
-
-    def get_elements(self):
-        return self._elements
 
     def write_attributes(self):
         if not self._elements:

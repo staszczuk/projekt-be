@@ -42,7 +42,7 @@ class Scraper:
 
         categories.write_attributes()
 
-        for category in categories.get_elements():
+        for category in categories:
             self._iterate_subcategories(category)
 
     def _iterate_subcategories(self, category: Element):
@@ -67,7 +67,7 @@ class Scraper:
 
         subcategories.write_attributes()
 
-        for subcategory in subcategories.get_elements():
+        for subcategory in subcategories:
             self._iterate_products(subcategory)
 
     def _iterate_products(self, subcategory: Element):
@@ -85,7 +85,7 @@ class Scraper:
             product = Element(link)
             products.add_element(product)
 
-        for product in products.get_elements():
+        for product in products:
             self._save_product_info(product, subcategory)
 
         products.write_attributes()
