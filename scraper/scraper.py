@@ -2,6 +2,7 @@ import os
 import random
 import re
 
+from minify_html import minify
 from selenium import webdriver
 from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
@@ -141,7 +142,7 @@ class Scraper:
         description = self._driver.find_element(
             By.CSS_SELECTOR, ".product-description-content > .cms"
         ).get_attribute("innerHTML")
-        product.set_attribute("Description", description)
+        product.set_attribute("Description", minify(description))
 
         self._save_product_photos(product)
 
