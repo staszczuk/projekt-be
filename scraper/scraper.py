@@ -1,4 +1,5 @@
 import os
+import random
 import re
 
 from selenium import webdriver
@@ -23,20 +24,40 @@ class Scraper:
         self._iterate_categories()
         self._stop()
 
+    def _get_product_weight(self):
+        parameters = self._driver.find_elements(
+            By.CSS_SELECTOR, ".product-parameters-content > .parameter-row"
+        )
+
+        for parameter in parameters:
+            name = parameter.find_element(By.CSS_SELECTOR, ".parameter-name").text
+            value = parameter.find_element(
+                By.CSS_SELECTOR, ".parameter-description"
+            ).text
+
+            if name == "Waga [g]:":
+                return re.findall(r"\d+", value)[0]
+
+        return random.uniform(1, 60)
+
     def _iterate_categories(self):
         elements = self._driver.find_elements(
             By.CSS_SELECTOR,
             ".category-menu > div:nth-child(1) > ul > li > a:nth-child(1)",
         )
 
-        categories = Container("categories")
+        categories = Container("categories", "categories.csv")
 
         for element in elements:
             link = element.get_attribute("href")
             name = element.find_element(By.CSS_SELECTOR, "span:nth-child(1)").text
 
             category = Element(link)
-            category.add_attribute("name", name)
+            category.set_attribute("Active", 1)
+            category.set_attribute("Name", name)
+            category.set_attribute("Parent category", "Home")
+            category.set_attribute("Root category", 0)
+            category.set_attribute("Description", "TODO")
 
             categories.add_element(category)
 
@@ -53,15 +74,21 @@ class Scraper:
             ".sidebar-menu > li:nth-child(1) > ul:nth-child(2) > li:nth-child(1) > ul:nth-child(2) > li > a:nth-child(1)",
         )
 
-        subcategories = Container("subcategories")
+        subcategories = Container("subcategories", "categories.csv")
 
         for element in elements:
             link = element.get_attribute("href")
             name = element.find_element(By.CSS_SELECTOR, "span:nth-child(1)").text
 
             subcategory = Element(link)
-            subcategory.add_attribute("name", name)
-            subcategory.add_attribute("category", category.get_attribute("name"))
+            category.set_attribute("Active", 1)
+            category.set_attribute("Name", name)
+
+            parent_category_name = category.get_attribute("Name")
+            category.set_attribute("Parent category", parent_category_name)
+
+            category.set_attribute("Root category", 0)
+            category.set_attribute("Description", "TODO")
 
             subcategories.add_element(subcategory)
 
@@ -78,7 +105,7 @@ class Scraper:
             ".listing h3 > a:nth-child(1)",
         )
 
-        products = Container("prodcuts")
+        products = Container("prodcuts", "products.csv")
 
         for element in elements:
             link = element.get_attribute("href")
@@ -94,35 +121,37 @@ class Scraper:
         self._driver.get(product.get_link())
 
         name = self._driver.find_element(By.CSS_SELECTOR, "h1").text
-        product.add_attribute("name", name)
+        product.set_attribute("Name", name)
 
-        product.add_attribute("category", subcategory.get_attribute("category"))
-        product.add_attribute("subcategory", subcategory.get_attribute("name"))
+        categories = f"{subcategory.get_attribute('Parent category')},{subcategory.get_attribute('Name')}"
+        product.set_attribute("Categories", categories)
 
         try:
             price = self._driver.find_element(By.CSS_SELECTOR, ".price--large").text
-            product.add_attribute("available", "yes")
-            product.add_attribute("price", price)
+            product.set_attribute("Active", 1)
+            product.set_attribute("Price brutto", price)
         except NoSuchElementException:
-            product.add_attribute("available", "no")
-            product.add_attribute("price", -1)
+            product.set_attribute("Active", 0)
+            product.set_attribute("Price brutto", 0)
 
-        try:
-            old_price = self._driver.find_element(
-                By.CSS_SELECTOR, ".prices__price-old > div:nth-child(1)"
-            ).text
-            product.add_attribute("old_price", old_price)
-        except NoSuchElementException:
-            product.add_attribute("old_price", -1)
+        product.set_attribute("Weight", self._get_product_weight())
+        product.set_attribute("Tax ID", 1)
+        product.set_attribute("Quantity", random.randint(0, 120))
 
-        self.save_product_photos(product)
+        description = self._driver.find_element(
+            By.CSS_SELECTOR, ".product-description-content > .cms"
+        ).get_attribute("innerHTML")
+        product.set_attribute("Description", description)
 
-    def save_product_photos(self, product: Element):
+        self._save_product_photos(product)
+
+    def _save_product_photos(self, product: Element):
         elements = self._driver.find_elements(
             By.CSS_SELECTOR, ".c-gallery-screen-photo > img"
         )
 
         links = [element.get_attribute("src") for element in elements]
+        paths = ""
 
         saved_photos = 0
         pattern = re.compile(".*\.[^\/]*$")
@@ -136,8 +165,11 @@ class Scraper:
 
             self._driver.get(link)
             path = os.path.join("photos", f"{product.get_attribute('id')}_{id}.png")
+            paths += f"http://localhost/{path},"
             self._driver.save_screenshot(path)
             saved_photos += 1
+
+        product.set_attribute("Photo URLs", paths[:-1])
 
     def _stop(self):
         self._driver.quit()

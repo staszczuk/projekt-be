@@ -8,10 +8,10 @@ from element import Element
 class Container:
     overridden_files = []
 
-    def __init__(self, name):
+    def __init__(self, name, file_name):
         self._name = name
         self._elements: List[Element] = []
-        self._file_path = os.path.join("csv", name + ".csv")
+        self._file_path = os.path.join("csv", file_name)
 
     def __iter__(self):
         return iter(self._elements)
