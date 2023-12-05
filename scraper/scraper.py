@@ -38,7 +38,7 @@ class Scraper:
             ).text
 
             if name == "Waga [g]:":
-                return tools.extract_digits(value)
+                return tools.extract_digits(value).replace(",", ".")
 
         return random.uniform(1, 60)
 
