@@ -40,7 +40,7 @@ class Scraper:
             if name == "Waga [g]:":
                 return tools.extract_digits(value).replace(",", ".")
 
-        return random.uniform(1, 60)
+        return random.uniform(0.5, 10)
 
     def _iterate_categories(self):
         elements = self._driver.find_elements(
@@ -141,7 +141,7 @@ class Scraper:
 
         product.set_attribute("Weight", self._get_product_weight())
         product.set_attribute("Tax ID", 1)
-        product.set_attribute("Quantity", random.randint(0, 120))
+        product.set_attribute("Quantity", random.randint(0, 10))
 
         description = self._driver.find_element(
             By.CSS_SELECTOR, ".product-description-content > .cms"
