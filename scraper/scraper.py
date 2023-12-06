@@ -142,7 +142,8 @@ class Scraper:
         description = self._driver.find_element(
             By.CSS_SELECTOR, ".product-description-content > .cms"
         ).get_attribute("innerHTML")
-        product.set_attribute("Description", minify(description))
+        description = re.sub(r"<[^>]+>", " ", minify(description))
+        product.set_attribute("Description", description)
 
         self._save_product_photos(product)
 
