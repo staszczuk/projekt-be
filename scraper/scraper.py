@@ -124,7 +124,11 @@ class Scraper:
         name.replace("<", "&lt;").replace(">", "&gt;")
         product.set_attribute("Name", name)
 
-        categories = f"{subcategory.get_attribute('Parent category')}~{subcategory.get_attribute('Name')}"
+        if random.randint(0, 100) == 100:
+            categories = f"Strona główna~{subcategory.get_attribute('Name')}"
+        else:
+            categories = f"{subcategory.get_attribute('Parent category')}~{subcategory.get_attribute('Name')}"
+
         product.set_attribute("Categories", categories)
 
         try:
