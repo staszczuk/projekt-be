@@ -124,7 +124,7 @@ class Scraper:
         name.replace("<", "&lt;").replace(">", "&gt;")
         product.set_attribute("Name", name)
 
-        categories = f"{subcategory.get_attribute('Parent category')},{subcategory.get_attribute('Name')}"
+        categories = f"{subcategory.get_attribute('Parent category')}~{subcategory.get_attribute('Name')}"
         product.set_attribute("Categories", categories)
 
         try:
@@ -167,7 +167,7 @@ class Scraper:
 
             self._driver.get(link)
             path = os.path.join("photos", f"{product.get_attribute('id')}_{id}.png")
-            paths += f"http://localhost/{path},"
+            paths += f"http://localhost/{path}~"
             self._driver.save_screenshot(path)
             saved_photos += 1
 
