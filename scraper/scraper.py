@@ -121,6 +121,7 @@ class Scraper:
         self._driver.get(product.get_link())
 
         name = self._driver.find_element(By.CSS_SELECTOR, "h1").text
+        name.replace("<", "&lt;").replace(">", "&gt;")
         product.set_attribute("Name", name)
 
         categories = f"{subcategory.get_attribute('Parent category')},{subcategory.get_attribute('Name')}"
