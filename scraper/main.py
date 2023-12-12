@@ -5,7 +5,7 @@ import sys
 from scraper import Scraper
 
 
-def main(argv):
+def main(argv="https://www.cyfrowe.pl/aparaty.html"):
     if os.path.exists("csv"):
         shutil.rmtree("csv")
 
@@ -16,8 +16,8 @@ def main(argv):
     os.makedirs("photos")
 
     scraper = Scraper()
-    scraper.start(argv[0])
+    scraper.start(argv)
 
 
 if __name__ == "__main__":
-    main(sys.argv[1:])
+    main()

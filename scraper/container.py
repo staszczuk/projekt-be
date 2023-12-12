@@ -4,7 +4,7 @@ from typing import List
 
 from element import Element
 
-
+# zapisuje do plikow csv
 class Container:
     overridden_files = []
 
