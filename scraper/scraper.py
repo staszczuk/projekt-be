@@ -49,7 +49,6 @@ class Scraper:
         return str(weightf)
 
     def _iterate_categories(self):
-        # wszystkie ul i wszystkie li w srodku kazdego ul
         elements = self._driver.find_elements(
             By.CSS_SELECTOR,
             ".category-menu > div:nth-child(1) > ul > li > a:nth-child(1)",
@@ -57,8 +56,6 @@ class Scraper:
 
         categories = Container("categories", "categories.csv")
 
-
-        # iterujemy po kategoriach z fotografii
         category_no = 0
         for element in elements:
             if category_no >= 4:
@@ -67,10 +64,16 @@ class Scraper:
             link = element.get_attribute("href")
             name = element.find_element(By.CSS_SELECTOR, "span:nth-child(1)").text
 
+            print(name, " category no: ", category_no)
+
+            if name == "Używane aparaty cyfrowe" or name == "Akcesoria drobne":
+                print("znaleziono niechciane kategorie")
+                continue
+
             category = Element(link)
             category.set_attribute("Active", 1)
             category.set_attribute("Name", name)
-            category.set_attribute("Parent category", "Strona główna") # dla wszystkich glownych kategorii parent to glowna strona
+            category.set_attribute("Parent category", "Strona główna")
             category.set_attribute("Root category", 0)
 
             categories.add_element(category)
@@ -78,14 +81,8 @@ class Scraper:
 
         categories.write_attributes()
 
-        category_no = 0
         for category in categories:
-            if category.get_attribute("Name") == "Używane aparaty cyfrowe":
-                continue
-
             self._iterate_subcategories(category)
-            category_no += 1
-
 
     def _iterate_subcategories(self, category: Element):
         self._driver.get(category.get_link())
@@ -123,7 +120,6 @@ class Scraper:
         products = Container("prodcuts", "products.csv")
 
         while True:
-            # zapisuje produkty w danej podkategorii na danej stronie
             elements = self._driver.find_elements(
                 By.CSS_SELECTOR,
                 ".listing h3 > a:nth-child(1)",
