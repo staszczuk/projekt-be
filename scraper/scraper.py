@@ -40,6 +40,9 @@ class Scraper:
 
             if name == "Waga [g]:":
                 weight = tools.extract_digits(value).replace(",", ".")
+                if weight == '':
+                    break
+
                 weightf : float = float(weight)
                 weightf /= 1000
                 return str(round(weightf, 2))
