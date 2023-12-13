@@ -222,7 +222,7 @@
 # /app/config/parameters.php
 # /build/
 # /phpunit.xml
-/var/*
+/var/
 # !/var/cache
 # /var/cache/*
 # !var/cache/.gitkeep
