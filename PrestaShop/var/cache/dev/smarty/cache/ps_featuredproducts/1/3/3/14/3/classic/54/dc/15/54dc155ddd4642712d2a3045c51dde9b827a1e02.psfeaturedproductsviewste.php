@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.48, created on 2023-12-12 23:31:24
+/* Smarty version 3.1.48, created on 2023-12-13 10:52:30
   from 'module:psfeaturedproductsviewste' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.48',
-  'unifunc' => 'content_6578df3cd77248_84564984',
+  'unifunc' => 'content_65797ede2a5462_00333857',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -36,7 +36,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   ),
   'cache_lifetime' => 31536000,
 ),true)) {
-function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl) {
+function content_65797ede2a5462_00333857 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!-- begin /var/www/html/themes/classic/modules/ps_featuredproducts/views/templates/hook/ps_featuredproducts.tpl --><section class="featured-products clearfix">
   <h2 class="h2 products-section-title text-uppercase">
     Popularne produkty
@@ -46,16 +46,164 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 <div class="products row">
             
 <div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="270" data-id-product-attribute="0">
+  <article class="product-miniature js-product-miniature" data-id-product="10" data-id-product-attribute="0">
     <div class="thumbnail-container">
       <div class="thumbnail-top">
         
-                      <a href="https://localhost:8443/index.php?id_product=270&amp;rewrite=aparat-cyfrowy-fujifilm-x-t5-xf-16-80-mm-f-4-ois-wr-srebrny&amp;controller=product" class="thumbnail product-thumbnail">
+                      <a href="https://localhost:8443/index.php?id_product=10&amp;rewrite=aparat-cyfrowy-ricoh-gr-iiix&amp;controller=product" class="thumbnail product-thumbnail">
               <img
-                src="https://localhost:8443/img/p/3/9/7/397-home_default.jpg"
+                src="https://localhost:8443/img/p/1/9/19-home_default.jpg"
+                alt="Aparat cyfrowy Ricoh GR IIIx"
+                loading="lazy"
+                data-full-size-image-url="https://localhost:8443/img/p/1/9/19-large_default.jpg"
+                width="250"
+                height="250"
+              />
+            </a>
+                  
+
+        <div class="highlighted-informations no-variants">
+          
+            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
+              <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
+            </a>
+          
+
+          
+                      
+        </div>
+      </div>
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=10&amp;rewrite=aparat-cyfrowy-ricoh-gr-iiix&amp;controller=product" content="https://localhost:8443/index.php?id_product=10&amp;rewrite=aparat-cyfrowy-ricoh-gr-iiix&amp;controller=product">Aparat cyfrowy Ricoh GR IIIx</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="price" aria-label="Cena">
+                                                  4 999,00 zł
+                              </span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+<div class="product-list-reviews" data-id="10" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+  <div class="grade-stars small-stars"></div>
+  <div class="comments-nb"></div>
+</div>
+<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+        
+      </div>
+
+      
+    <ul class="product-flags js-product-flags">
+                    <li class="product-flag new">Nowy</li>
+            </ul>
+
+    </div>
+  </article>
+</div>
+
+            
+<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
+  <article class="product-miniature js-product-miniature" data-id-product="92" data-id-product-attribute="0">
+    <div class="thumbnail-container">
+      <div class="thumbnail-top">
+        
+                      <a href="https://localhost:8443/index.php?id_product=92&amp;rewrite=aparat-fujifilm-instax-mini-90-neo-classic-czarny&amp;controller=product" class="thumbnail product-thumbnail">
+              <img
+                src="https://localhost:8443/img/p/1/8/3/183-home_default.jpg"
+                alt="Aparat FujiFilm Instax Mini..."
+                loading="lazy"
+                data-full-size-image-url="https://localhost:8443/img/p/1/8/3/183-large_default.jpg"
+                width="250"
+                height="250"
+              />
+            </a>
+                  
+
+        <div class="highlighted-informations no-variants">
+          
+            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
+              <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
+            </a>
+          
+
+          
+                      
+        </div>
+      </div>
+
+      <div class="product-description">
+        
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=92&amp;rewrite=aparat-fujifilm-instax-mini-90-neo-classic-czarny&amp;controller=product" content="https://localhost:8443/index.php?id_product=92&amp;rewrite=aparat-fujifilm-instax-mini-90-neo-classic-czarny&amp;controller=product">Aparat FujiFilm Instax Mini...</a></h3>
+                  
+
+        
+                      <div class="product-price-and-shipping">
+              
+              
+
+              <span class="price" aria-label="Cena">
+                                                  649,00 zł
+                              </span>
+
+              
+
+              
+            </div>
+                  
+
+        
+          
+<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+<div class="product-list-reviews" data-id="92" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+  <div class="grade-stars small-stars"></div>
+  <div class="comments-nb"></div>
+</div>
+<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
+<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
+
+        
+      </div>
+
+      
+    <ul class="product-flags js-product-flags">
+                    <li class="product-flag new">Nowy</li>
+            </ul>
+
+    </div>
+  </article>
+</div>
+
+            
+<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
+  <article class="product-miniature js-product-miniature" data-id-product="235" data-id-product-attribute="0">
+    <div class="thumbnail-container">
+      <div class="thumbnail-top">
+        
+                      <a href="https://localhost:8443/index.php?id_product=235&amp;rewrite=aparat-cyfrowy-fujifilm-x-h2s-10499-z-kodem-fxh2s&amp;controller=product" class="thumbnail product-thumbnail">
+              <img
+                src="https://localhost:8443/img/p/4/5/5/455-home_default.jpg"
                 alt="Aparat cyfrowy FujiFilm..."
                 loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/3/9/7/397-large_default.jpg"
+                data-full-size-image-url="https://localhost:8443/img/p/4/5/5/455-large_default.jpg"
                 width="250"
                 height="250"
               />
@@ -76,7 +224,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=270&amp;rewrite=aparat-cyfrowy-fujifilm-x-t5-xf-16-80-mm-f-4-ois-wr-srebrny&amp;controller=product" content="https://localhost:8443/index.php?id_product=270&amp;rewrite=aparat-cyfrowy-fujifilm-x-t5-xf-16-80-mm-f-4-ois-wr-srebrny&amp;controller=product">Aparat cyfrowy FujiFilm...</a></h3>
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=235&amp;rewrite=aparat-cyfrowy-fujifilm-x-h2s-10499-z-kodem-fxh2s&amp;controller=product" content="https://localhost:8443/index.php?id_product=235&amp;rewrite=aparat-cyfrowy-fujifilm-x-h2s-10499-z-kodem-fxh2s&amp;controller=product">Aparat cyfrowy FujiFilm...</a></h3>
                   
 
         
@@ -85,7 +233,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="price" aria-label="Cena">
-                                                  11 139,00 zł
+                                                  11 499,00 zł
                               </span>
 
               
@@ -99,7 +247,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 <!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
 <!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 
-<div class="product-list-reviews" data-id="270" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+<div class="product-list-reviews" data-id="235" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
@@ -120,16 +268,14 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
             
 <div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="398" data-id-product-attribute="0">
+  <article class="product-miniature js-product-miniature" data-id-product="250" data-id-product-attribute="0">
     <div class="thumbnail-container">
       <div class="thumbnail-top">
         
-                      <a href="https://localhost:8443/index.php?id_product=398&amp;rewrite=aparat-cyfrowy-nikon-z30-body&amp;controller=product" class="thumbnail product-thumbnail">
+                      <a href="https://localhost:8443/index.php?id_product=250&amp;rewrite=aparat-cyfrowy-canon-eos-r50&amp;controller=product" class="thumbnail product-thumbnail">
               <img
-                src="https://localhost:8443/img/p/5/7/8/578-home_default.jpg"
-                alt="Aparat cyfrowy Nikon Z30 body"
+                src="https://localhost:8443/img/p/pl-default-home_default.jpg"
                 loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/5/7/8/578-large_default.jpg"
                 width="250"
                 height="250"
               />
@@ -150,7 +296,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=398&amp;rewrite=aparat-cyfrowy-nikon-z30-body&amp;controller=product" content="https://localhost:8443/index.php?id_product=398&amp;rewrite=aparat-cyfrowy-nikon-z30-body&amp;controller=product">Aparat cyfrowy Nikon Z30 body</a></h3>
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=250&amp;rewrite=aparat-cyfrowy-canon-eos-r50&amp;controller=product" content="https://localhost:8443/index.php?id_product=250&amp;rewrite=aparat-cyfrowy-canon-eos-r50&amp;controller=product">Aparat cyfrowy Canon EOS R50</a></h3>
                   
 
         
@@ -159,7 +305,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="price" aria-label="Cena">
-                                                  2 549,00 zł
+                                                  2 999,00 zł
                               </span>
 
               
@@ -173,7 +319,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 <!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
 <!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 
-<div class="product-list-reviews" data-id="398" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+<div class="product-list-reviews" data-id="250" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
@@ -194,16 +340,16 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
             
 <div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="401" data-id-product-attribute="0">
+  <article class="product-miniature js-product-miniature" data-id-product="354" data-id-product-attribute="0">
     <div class="thumbnail-container">
       <div class="thumbnail-top">
         
-                      <a href="https://localhost:8443/index.php?id_product=401&amp;rewrite=aparat-cyfrowy-olympus-e-p7-bialy-ob-14-42-ez-srebrny&amp;controller=product" class="thumbnail product-thumbnail">
+                      <a href="https://localhost:8443/index.php?id_product=354&amp;rewrite=aparat-cyfrowy-olympus-e-p7-bialy-ob-14-42-ez-srebrny&amp;controller=product" class="thumbnail product-thumbnail">
               <img
-                src="https://localhost:8443/img/p/5/8/3/583-home_default.jpg"
+                src="https://localhost:8443/img/p/6/8/0/680-home_default.jpg"
                 alt="Aparat cyfrowy Olympus E-P7..."
                 loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/5/8/3/583-large_default.jpg"
+                data-full-size-image-url="https://localhost:8443/img/p/6/8/0/680-large_default.jpg"
                 width="250"
                 height="250"
               />
@@ -224,7 +370,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=401&amp;rewrite=aparat-cyfrowy-olympus-e-p7-bialy-ob-14-42-ez-srebrny&amp;controller=product" content="https://localhost:8443/index.php?id_product=401&amp;rewrite=aparat-cyfrowy-olympus-e-p7-bialy-ob-14-42-ez-srebrny&amp;controller=product">Aparat cyfrowy Olympus E-P7...</a></h3>
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=354&amp;rewrite=aparat-cyfrowy-olympus-e-p7-bialy-ob-14-42-ez-srebrny&amp;controller=product" content="https://localhost:8443/index.php?id_product=354&amp;rewrite=aparat-cyfrowy-olympus-e-p7-bialy-ob-14-42-ez-srebrny&amp;controller=product">Aparat cyfrowy Olympus E-P7...</a></h3>
                   
 
         
@@ -247,7 +393,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 <!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
 <!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 
-<div class="product-list-reviews" data-id="401" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+<div class="product-list-reviews" data-id="354" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
@@ -268,16 +414,16 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
             
 <div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="495" data-id-product-attribute="0">
+  <article class="product-miniature js-product-miniature" data-id-product="412" data-id-product-attribute="0">
     <div class="thumbnail-container">
       <div class="thumbnail-top">
         
-                      <a href="https://localhost:8443/index.php?id_product=495&amp;rewrite=lustrzanka-canon-zestaw-eos-90d-ef-s-10-18-f45-56-is-stm&amp;controller=product" class="thumbnail product-thumbnail">
+                      <a href="https://localhost:8443/index.php?id_product=412&amp;rewrite=lustrzanka-canon-eos-90d-18-135-mm-f-35-56&amp;controller=product" class="thumbnail product-thumbnail">
               <img
-                src="https://localhost:8443/img/p/7/1/9/719-home_default.jpg"
-                alt="Lustrzanka Canon zestaw EOS..."
+                src="https://localhost:8443/img/p/7/9/4/794-home_default.jpg"
+                alt="Lustrzanka Canon EOS 90D +..."
                 loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/7/1/9/719-large_default.jpg"
+                data-full-size-image-url="https://localhost:8443/img/p/7/9/4/794-large_default.jpg"
                 width="250"
                 height="250"
               />
@@ -298,7 +444,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=495&amp;rewrite=lustrzanka-canon-zestaw-eos-90d-ef-s-10-18-f45-56-is-stm&amp;controller=product" content="https://localhost:8443/index.php?id_product=495&amp;rewrite=lustrzanka-canon-zestaw-eos-90d-ef-s-10-18-f45-56-is-stm&amp;controller=product">Lustrzanka Canon zestaw EOS...</a></h3>
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=412&amp;rewrite=lustrzanka-canon-eos-90d-18-135-mm-f-35-56&amp;controller=product" content="https://localhost:8443/index.php?id_product=412&amp;rewrite=lustrzanka-canon-eos-90d-18-135-mm-f-35-56&amp;controller=product">Lustrzanka Canon EOS 90D +...</a></h3>
                   
 
         
@@ -307,7 +453,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="price" aria-label="Cena">
-                                                  6 098,00 zł
+                                                  6 299,00 zł
                               </span>
 
               
@@ -321,7 +467,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 <!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
 <!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 
-<div class="product-list-reviews" data-id="495" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+<div class="product-list-reviews" data-id="412" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
@@ -342,16 +488,16 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
             
 <div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="535" data-id-product-attribute="0">
+  <article class="product-miniature js-product-miniature" data-id-product="459" data-id-product-attribute="0">
     <div class="thumbnail-container">
       <div class="thumbnail-top">
         
-                      <a href="https://localhost:8443/index.php?id_product=535&amp;rewrite=rotin-zestaw-do-czyszczenia-matrycy-typ-b&amp;controller=product" class="thumbnail product-thumbnail">
+                      <a href="https://localhost:8443/index.php?id_product=459&amp;rewrite=lustrzanka-pentax-k-70-ob18-55-wr-50-200-wr-czarny&amp;controller=product" class="thumbnail product-thumbnail">
               <img
-                src="https://localhost:8443/img/p/7/7/0/770-home_default.jpg"
-                alt="Rotin Zestaw do czyszczenia..."
+                src="https://localhost:8443/img/p/8/8/7/887-home_default.jpg"
+                alt="Lustrzanka Pentax K-70 +..."
                 loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/7/7/0/770-large_default.jpg"
+                data-full-size-image-url="https://localhost:8443/img/p/8/8/7/887-large_default.jpg"
                 width="250"
                 height="250"
               />
@@ -372,7 +518,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=535&amp;rewrite=rotin-zestaw-do-czyszczenia-matrycy-typ-b&amp;controller=product" content="https://localhost:8443/index.php?id_product=535&amp;rewrite=rotin-zestaw-do-czyszczenia-matrycy-typ-b&amp;controller=product">Rotin Zestaw do czyszczenia...</a></h3>
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=459&amp;rewrite=lustrzanka-pentax-k-70-ob18-55-wr-50-200-wr-czarny&amp;controller=product" content="https://localhost:8443/index.php?id_product=459&amp;rewrite=lustrzanka-pentax-k-70-ob18-55-wr-50-200-wr-czarny&amp;controller=product">Lustrzanka Pentax K-70 +...</a></h3>
                   
 
         
@@ -381,7 +527,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="price" aria-label="Cena">
-                                                  60,00 zł
+                                                  4 999,00 zł
                               </span>
 
               
@@ -395,7 +541,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 <!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
 <!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 
-<div class="product-list-reviews" data-id="535" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+<div class="product-list-reviews" data-id="459" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
@@ -416,16 +562,16 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
             
 <div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="580" data-id-product-attribute="0">
+  <article class="product-miniature js-product-miniature" data-id-product="574" data-id-product-attribute="0">
     <div class="thumbnail-container">
       <div class="thumbnail-top">
         
-                      <a href="https://localhost:8443/index.php?id_product=580&amp;rewrite=canon-pz-e1-adapter&amp;controller=product" class="thumbnail product-thumbnail">
+                      <a href="https://localhost:8443/index.php?id_product=574&amp;rewrite=grip-newell-vg-c3em-do-sony&amp;controller=product" class="thumbnail product-thumbnail">
               <img
-                src="https://localhost:8443/img/p/8/3/1/831-home_default.jpg"
-                alt="Canon PZ-E1 adapter"
+                src="https://localhost:8443/img/p/1/0/4/3/1043-home_default.jpg"
+                alt="Grip Newell VG-C3EM do Sony"
                 loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/8/3/1/831-large_default.jpg"
+                data-full-size-image-url="https://localhost:8443/img/p/1/0/4/3/1043-large_default.jpg"
                 width="250"
                 height="250"
               />
@@ -446,7 +592,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 
       <div class="product-description">
         
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=580&amp;rewrite=canon-pz-e1-adapter&amp;controller=product" content="https://localhost:8443/index.php?id_product=580&amp;rewrite=canon-pz-e1-adapter&amp;controller=product">Canon PZ-E1 adapter</a></h3>
+                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=574&amp;rewrite=grip-newell-vg-c3em-do-sony&amp;controller=product" content="https://localhost:8443/index.php?id_product=574&amp;rewrite=grip-newell-vg-c3em-do-sony&amp;controller=product">Grip Newell VG-C3EM do Sony</a></h3>
                   
 
         
@@ -455,7 +601,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
               
 
               <span class="price" aria-label="Cena">
-                                                  719,00 zł
+                                                  445,00 zł
                               </span>
 
               
@@ -469,155 +615,7 @@ function content_6578df3cd77248_84564984 (Smarty_Internal_Template $_smarty_tpl)
 <!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
 <!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
 
-<div class="product-list-reviews" data-id="580" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
-  <div class="grade-stars small-stars"></div>
-  <div class="comments-nb"></div>
-</div>
-<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-        
-      </div>
-
-      
-    <ul class="product-flags js-product-flags">
-                    <li class="product-flag new">Nowy</li>
-            </ul>
-
-    </div>
-  </article>
-</div>
-
-            
-<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="771" data-id-product-attribute="0">
-    <div class="thumbnail-container">
-      <div class="thumbnail-top">
-        
-                      <a href="https://localhost:8443/index.php?id_product=771&amp;rewrite=nikon-okular-korekcji-dioptrazu-dk-20c-neutralny&amp;controller=product" class="thumbnail product-thumbnail">
-              <img
-                src="https://localhost:8443/img/p/1/0/7/1/1071-home_default.jpg"
-                alt="Nikon Okular korekcji..."
-                loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/1/0/7/1/1071-large_default.jpg"
-                width="250"
-                height="250"
-              />
-            </a>
-                  
-
-        <div class="highlighted-informations no-variants">
-          
-            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
-              <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
-            </a>
-          
-
-          
-                      
-        </div>
-      </div>
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=771&amp;rewrite=nikon-okular-korekcji-dioptrazu-dk-20c-neutralny&amp;controller=product" content="https://localhost:8443/index.php?id_product=771&amp;rewrite=nikon-okular-korekcji-dioptrazu-dk-20c-neutralny&amp;controller=product">Nikon Okular korekcji...</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="price" aria-label="Cena">
-                                                  59,00 zł
-                              </span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-<div class="product-list-reviews" data-id="771" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
-  <div class="grade-stars small-stars"></div>
-  <div class="comments-nb"></div>
-</div>
-<!-- end /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- end module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-        
-      </div>
-
-      
-    <ul class="product-flags js-product-flags">
-                    <li class="product-flag new">Nowy</li>
-            </ul>
-
-    </div>
-  </article>
-</div>
-
-            
-<div class="js-product product col-xs-12 col-sm-6 col-lg-4 col-xl-3">
-  <article class="product-miniature js-product-miniature" data-id-product="916" data-id-product-attribute="0">
-    <div class="thumbnail-container">
-      <div class="thumbnail-top">
-        
-                      <a href="https://localhost:8443/index.php?id_product=916&amp;rewrite=oslona-przeciwsloneczna-delta-zamiennik-canon-ew-83g&amp;controller=product" class="thumbnail product-thumbnail">
-              <img
-                src="https://localhost:8443/img/p/1/2/7/1/1271-home_default.jpg"
-                alt="Osłona przeciwsłoneczna..."
-                loading="lazy"
-                data-full-size-image-url="https://localhost:8443/img/p/1/2/7/1/1271-large_default.jpg"
-                width="250"
-                height="250"
-              />
-            </a>
-                  
-
-        <div class="highlighted-informations no-variants">
-          
-            <a class="quick-view js-quick-view" href="#" data-link-action="quickview">
-              <i class="material-icons search">&#xE8B6;</i> Szybki podgląd
-            </a>
-          
-
-          
-                      
-        </div>
-      </div>
-
-      <div class="product-description">
-        
-                      <h3 class="h3 product-title"><a href="https://localhost:8443/index.php?id_product=916&amp;rewrite=oslona-przeciwsloneczna-delta-zamiennik-canon-ew-83g&amp;controller=product" content="https://localhost:8443/index.php?id_product=916&amp;rewrite=oslona-przeciwsloneczna-delta-zamiennik-canon-ew-83g&amp;controller=product">Osłona przeciwsłoneczna...</a></h3>
-                  
-
-        
-                      <div class="product-price-and-shipping">
-              
-              
-
-              <span class="price" aria-label="Cena">
-                                                  25,00 zł
-                              </span>
-
-              
-
-              
-            </div>
-                  
-
-        
-          
-<!-- begin module:productcomments/views/templates/hook/product-list-reviews.tpl -->
-<!-- begin /var/www/html/modules/productcomments/views/templates/hook/product-list-reviews.tpl -->
-
-<div class="product-list-reviews" data-id="916" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
+<div class="product-list-reviews" data-id="574" data-url="https://localhost:8443/index.php?fc=module&module=productcomments&controller=CommentGrade">
   <div class="grade-stars small-stars"></div>
   <div class="comments-nb"></div>
 </div>
