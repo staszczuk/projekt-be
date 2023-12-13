@@ -1,10 +1,11 @@
+import math
 import os
 import random
 import re
 
 from minify_html import minify
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
+from selenium.common.exceptions import NoSuchElementException, WebDriverException
 from selenium.webdriver.common.by import By
 from selenium.webdriver.firefox.options import Options
 
@@ -14,10 +15,10 @@ import tools
 
 N_SAVED_PHOTOS = 2
 
-
 class Scraper:
     def __init__(self):
         options = Options()
+        self._foundProducts = 0
         options.page_load_strategy = "normal"
         self._driver = webdriver.Firefox(options=options)
 
@@ -38,9 +39,17 @@ class Scraper:
             ).text
 
             if name == "Waga [g]:":
-                return tools.extract_digits(value).replace(",", ".")
+                weight = tools.extract_digits(value).replace(",", ".")
+                if weight == '':
+                    break
 
-        return random.uniform(0.5, 10)
+                weightf : float = float(weight)
+                weightf /= 1000
+                return str(round(weightf, 2))
+
+        weight = random.uniform(0.5, 10)
+        weightf: float = round(weight, 2)
+        return str(weightf)
 
     def _iterate_categories(self):
         elements = self._driver.find_elements(
@@ -50,9 +59,19 @@ class Scraper:
 
         categories = Container("categories", "categories.csv")
 
+        category_no = 0
         for element in elements:
+            if category_no >= 4:
+                break
+
             link = element.get_attribute("href")
             name = element.find_element(By.CSS_SELECTOR, "span:nth-child(1)").text
+
+            print(name, " category no: ", category_no)
+
+            if name == "Używane aparaty cyfrowe" or name == "Akcesoria drobne":
+                print("znaleziono niechciane kategorie")
+                continue
 
             category = Element(link)
             category.set_attribute("Active", 1)
@@ -61,6 +80,7 @@ class Scraper:
             category.set_attribute("Root category", 0)
 
             categories.add_element(category)
+            category_no += 1
 
         categories.write_attributes()
 
@@ -100,17 +120,28 @@ class Scraper:
     def _iterate_products(self, subcategory: Element):
         self._driver.get(subcategory.get_link())
 
-        elements = self._driver.find_elements(
-            By.CSS_SELECTOR,
-            ".listing h3 > a:nth-child(1)",
-        )
-
         products = Container("prodcuts", "products.csv")
 
-        for element in elements:
-            link = element.get_attribute("href")
-            product = Element(link)
-            products.add_element(product)
+        while True:
+            elements = self._driver.find_elements(
+                By.CSS_SELECTOR,
+                ".listing h3 > a:nth-child(1)",
+            )
+
+            for element in elements:
+                link = element.get_attribute("href")
+                product = Element(link)
+                products.add_element(product)
+
+            try:
+                next_page = self._driver.find_element(By.CSS_SELECTOR, ".navigator > .nav_next")
+                if next_page.get_attribute("class").__contains__("inactive"):
+                    break
+                else:
+                    next_page.click()
+
+            except NoSuchElementException:
+                break
 
         for product in products:
             self._save_product_info(product, subcategory)
@@ -118,38 +149,51 @@ class Scraper:
         products.write_attributes()
 
     def _save_product_info(self, product: Element, subcategory: Element):
-        self._driver.get(product.get_link())
-
-        name = self._driver.find_element(By.CSS_SELECTOR, "h1").text
-        name.replace("<", "&lt;").replace(">", "&gt;")
-        product.set_attribute("Name", name)
-
-        if random.randint(0, 100) == 100:
-            categories = f"Strona główna~{subcategory.get_attribute('Name')}"
-        else:
-            categories = f"{subcategory.get_attribute('Parent category')}~{subcategory.get_attribute('Name')}"
-
-        product.set_attribute("Categories", categories)
-
+        print(self._foundProducts)
         try:
-            price = self._driver.find_element(By.CSS_SELECTOR, ".price--large").text
-            product.set_attribute("Active", 1)
-            product.set_attribute("Price brutto", tools.extract_digits(price))
-        except NoSuchElementException:
-            product.set_attribute("Active", 0)
-            product.set_attribute("Price brutto", 0)
+            self._driver.get(product.get_link())
 
-        product.set_attribute("Weight", self._get_product_weight())
-        product.set_attribute("Tax ID", 1)
-        product.set_attribute("Quantity", random.randint(0, 10))
+            name_raw = self._driver.find_element(By.CSS_SELECTOR, "h1").text
+            name_raw.replace("<", "-").replace(">", "-")
+            name = (name_raw[:100]) if len(name_raw) > 100 else name_raw
 
-        description = self._driver.find_element(
-            By.CSS_SELECTOR, ".product-description-content > .cms"
-        ).get_attribute("innerHTML")
-        description = re.sub(r"<[^>]+>", " ", minify(description))
-        product.set_attribute("Description", description)
+            print(name_raw)
+            print(name)
 
-        self._save_product_photos(product)
+            product.set_attribute("Name", name)
+
+            if random.randint(0, 100) == 100:
+                categories = f"Strona główna~{subcategory.get_attribute('Name')}"
+            else:
+                categories = f"{subcategory.get_attribute('Name')}"
+
+            product.set_attribute("Categories", categories)
+
+            try:
+                price = self._driver.find_element(By.CSS_SELECTOR, ".price--large").text
+                product.set_attribute("Active", 1)
+                product.set_attribute("Price brutto", tools.extract_digits(price))
+            except NoSuchElementException:
+                product.set_attribute("Active", 0)
+                product.set_attribute("Price brutto", 0)
+
+            w = self._get_product_weight()
+            print(f'waga{w}')
+            product.set_attribute("Weight", w)
+            product.set_attribute("Tax ID", 1)
+            product.set_attribute("Quantity", random.randint(0, 10))
+
+            description = self._driver.find_element(
+                By.CSS_SELECTOR, ".product-description-content > .cms"
+            ).get_attribute("innerHTML")
+            description = re.sub(r"<[^>]+>", " ", minify(description))
+            product.set_attribute("Description", description)
+
+            self._save_product_photos(product)
+            self._foundProducts += 1
+
+        except WebDriverException:
+            pass
 
     def _save_product_photos(self, product: Element):
         elements = self._driver.find_elements(
