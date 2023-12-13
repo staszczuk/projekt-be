@@ -2638,3 +2638,8 @@ b8f8fb,172.26.0.1,GET,https://localhost:8443/admin-dev/index.php/configure/advan
 5bd64b,172.26.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=h2y2G6yhFyO0a3MYIUYhkXrysOobMid0_aNjJJ_uZro,1702461148,,200
 32e799,172.26.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=h2y2G6yhFyO0a3MYIUYhkXrysOobMid0_aNjJJ_uZro&rand=1702461147937,1702461148,,200
 004077,172.26.0.1,GET,https://localhost:8443/admin-dev/index.php/configure/advanced/import/fields?_token=h2y2G6yhFyO0a3MYIUYhkXrysOobMid0_aNjJJ_uZro&entity=0,1702461148,,200
+2a30c4,172.26.0.1,GET,https://localhost:8443/admin-dev/index.php/?controller=AdminImport&token=3c32ac81c4e820b2eee066cd0ccb3a4f,1702461515,,302
+8d9fc8,172.26.0.1,GET,https://localhost:8443/admin-dev/index.php/configure/advanced/import/?_token=h2y2G6yhFyO0a3MYIUYhkXrysOobMid0_aNjJJ_uZro&token=3c32ac81c4e820b2eee066cd0ccb3a4f,1702461516,,200
+8b4676,172.26.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=h2y2G6yhFyO0a3MYIUYhkXrysOobMid0_aNjJJ_uZro,1702461516,,200
+fc7ea9,172.26.0.1,GET,https://localhost:8443/admin-dev/index.php/configure/advanced/import/fields?_token=h2y2G6yhFyO0a3MYIUYhkXrysOobMid0_aNjJJ_uZro&entity=0,1702461516,,200
+e9d2fb,172.26.0.1,POST,https://localhost:8443/admin-dev/index.php/common/notifications?_token=h2y2G6yhFyO0a3MYIUYhkXrysOobMid0_aNjJJ_uZro&rand=1702461516534,1702461516,,200
