@@ -1,0 +1,5 @@
+id;Name *;Categories (x,y,z...);brutto;old_price;Active (0/1);ID podatku;dlugi opis;podsumowanie;weight;ilosc;Image URLs (x,y,z...)
+37;Aparat cyfrowy Canon PowerShot G7 X Mark III;Aparaty cyfrowe,kompakty;3 499 zł;3 669 zł;1;1;opis1;dupa;19;84;localhost/photos/37_0.png,localhost/photos/37_1.png
+38;Aparat cyfrowy Sony ZV-1 II (ZV1M2BDI.EU);Aparaty cyfrowe,kompakty;4 179 zł;-1;1;1;opis2;dupa;54;118;localhost/photos/38_0.png,localhost/photos/38_1.png
+39;Aparat cyfrowy Nikon Coolpix P1000;Aparaty cyfrowe,kompakty;4 999 zł;-1;1;1;opis3;dupa;30;92;localhost/photos/39_0.png,localhost/photos/39_1.png
+40;Aparat cyfrowy Canon PowerShot G7 X Mark II premium kit;Aparaty cyfrowe,kompakty;3 049 zł;-1;1;1;opis4;dupa;58;94;localhost/photos/40_0.png,localhost/photos/40_1.png

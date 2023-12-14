@@ -1,0 +1,35 @@
+language: php
+
+dist: trusty
+
+php:
+  - 7.1
+  - 7.2
+  - 7.3
+
+env:
+  - PHPUNIT_VERSION=6.5.14
+  - PHPUNIT_VERSION=7.5
+  - PHPUNIT_VERSION=8.1
+  - PHPUNIT_VERSION=9.0
+
+
+script:
+  - ./bin/phpunit --coverage-clover=build/logs/clover.xml
+
+matrix:
+  allow_failures:
+    - env: PHPUNIT_VERSION=8.1
+    - env: PHPUNIT_VERSION=9.0
+#  exclude:
+#    - php: 7.1
+#      env: PHPUNIT_VERSION=8.1
+
+install:
+  - composer require --dev phpunit/phpunit:${PHPUNIT_VERSION}
+  - composer install --dev
+
+after_script:
+  - wget https://scrutinizer-ci.com/ocular.phar
+  - php ocular.phar code-coverage:upload --format=php-clover build/logs/clover.xml
+  - CODECLIMATE_REPO_TOKEN=74f9cd376c20c19d09d6c73e4bac9dad48209fa7f3fb44b650ec7d70db81a51a ./bin/test-reporter
